@@ -67,6 +67,10 @@ window.addEvent('load', function() {
 //
 window.addEvent('scroll', function() {
 	// menu animation
+    /*
+     JD: commenting this out to have a consistent navbar that slides down the
+         the page, rather than have it show up after the user has scrolled
+         down a full page length 
 	if(page_loaded && document.getElement('body').hasClass('imageBg')) {
 		// if menu is not displayed now
 		if(window.getScroll().y > document.id('gkHeader').getSize().y && !document.id('gkMenuWrap').hasClass('active')) {
@@ -83,6 +87,7 @@ window.addEvent('scroll', function() {
 			document.id('gkMenuWrap').setProperty('class', '');
 		}
 	}
+    */
 	// animate all right sliders
 	if(elementsToAnimate.length > 0) {		
 		// get the necessary values and positions
