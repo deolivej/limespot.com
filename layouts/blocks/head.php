@@ -28,6 +28,9 @@ if($this->API->get('typography', '1') == '1') {
 	}
 }
 
+//JD: adding bootstrap css library
+$this->API->addCSS($this->API->URLtemplate() . '/css/bootstrap.min.css');
+
 if($this->API->get("css_override", '0')) {
 	$this->API->addCSS($this->API->URLtemplate() . '/css/override.css');
 }
