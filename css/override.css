@@ -9,3 +9,62 @@
 */
 
 /* Here you can include your override CSS styles */
+.imageBg #gkLogo.cssLogo, #gkMenuWrap #gkLogo.cssLogo {
+  background-image: url('../../../images/logo.png');
+  height: 71px;
+  margin-top: 10px;
+}
+
+.imageBg #gkHeader {
+  background-image: url('../../../images/background.jpg');
+}
+
+.imageBg #gkHeaderMod {
+  padding-bottom: 80px;
+}
+
+.imageBg #gkHeader > div:first-child, .blog #gkMenuWrap {
+  background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  width: 100%;
+  z-index: 1001;
+}
+
+.blog #gkMenuWrap {
+  height: 81px;
+}
+
+.blog nav  > ul > li > a {
+  color: #fff;
+}
+
+.blog #gkMenuWrap #gkMainMenu {
+  margin-top: 11px;
+}
+
+.imageBg #gkHeaderMod input[type="submit"] {
+  background-color: limegreen;
+}
+
+.gkHorizontalSlideLeftColumn a.button {
+  background-color: limegreen; 
+}
+
+.gkIconArea {
+  background: none;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+.lsRocket1 {
+  background-image: url('../images/style1/gkrocket.png');
+}
+
+.lsCrop1 {
+  background-image: url('../images/style1/gkcrop.png');
+}
+
+.lsMobile1 {
+  background-image: url('../images/style1/gkmobile.png');
+}
