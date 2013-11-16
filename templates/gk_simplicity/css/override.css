@@ -1,14 +1,10 @@
 /*
-#------------------------------------------------------------------------
-# Simplicity - February Joomla! template (for Joomla 2.5)
-#
-# Copyright (C) 2007-2013 Gavick.com. All Rights Reserved.
-# License: Copyrighted Commercial Software
-# Website: http://www.gavick.com
-# Support: support@gavick.com 
-*/
+ * simplicity overrides for limespot.com
+ */
 
-/* Here you can include your override CSS styles */
+/*
+ * header/navbar customizations
+ */
 .imageBg #gkLogo.cssLogo, #gkMenuWrap #gkLogo.cssLogo {
   background-image: url('../../../images/logo.png');
   height: 71px;
@@ -19,29 +15,82 @@
   background-image: url('../../../images/background.jpg');
 }
 
-.imageBg #gkHeaderMod {
-  padding-bottom: 80px;
-}
-
-.imageBg #gkHeader > div:first-child, .blog #gkMenuWrap {
+.imageBg #gkHeader > div:first-child, .page #gkMenuWrap {
   background-color: rgba(0,0,0,0.8);
   position: fixed;
   width: 100%;
   z-index: 1001;
 }
 
-.blog #gkMenuWrap {
+body.page #gkMenuWrap {
   height: 81px;
 }
 
-.blog nav  > ul > li > a {
+body.page nav  > ul > li > a {
   color: #fff;
 }
 
-.blog #gkMenuWrap #gkMainMenu {
+body.page #gkMenuWrap #gkMainMenu {
   margin-top: 11px;
 }
 
+/*
+ * regular (non-frontpage) layout
+ */
+article aside {
+  display: none;
+}
+
+article header {
+  margin-bottom: 0px;
+}
+
+div.itemBody.containsItemInfo {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+/*
+article div.itemBody div {
+  margin-right: 10%;
+}
+
+section.blog-featured {
+  margin-left: 10%;
+}
+*/
+
+#gkMainbody article.item-pageabout div.box.centered {
+  padding-top: 10px !important;
+  padding-bottom: 25px !important;
+  margin-bottom: 0px
+}
+
+#gkMainbody article.item-pageabout div.box.centered.inline {
+  padding-top: 0px !important;
+  margin-top: 0px !important;
+}
+
+/*
+ * grid/icon layout stuff
+ */
+.gkIconArea {
+  background: none;
+  margin-bottom: 0px;
+  width: 200px;
+  height: 200px;
+}
+
+.gkIcons.bi > div {
+   width: 50%;
+}
+
+box.centered.inline .gkIcons {
+  margin-top: 0px;
+}
+
+/*
+ * submit button color
+ */
 .imageBg #gkHeaderMod input[type="submit"] {
   background-color: limegreen;
 }
@@ -50,13 +99,20 @@
   background-color: limegreen; 
 }
 
-.gkIconArea {
-  background: none;
-  margin-bottom: 10px;
-  width: 200px;
-  height: 200px;
+/*
+ * some utility classes
+ */
+.lsSuperscript {
+  vertical-align: super;
 }
 
+h2 span.lsSuperscript {
+  font-size: 16px;
+}
+
+/*
+ * temporary stuff
+ */
 .lsRocket1 {
   background-image: url('../images/style1/gkrocket.png');
 }
