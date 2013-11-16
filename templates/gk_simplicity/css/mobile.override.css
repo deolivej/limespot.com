@@ -1,0 +1,7 @@
+/*
+ * JD: override of mobile layout
+ */
+
+.imageBg #gkHeader {
+  background-image: url('../../../images/background_mobile.jpg');
+}

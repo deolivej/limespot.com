@@ -1,0 +1,11 @@
+/*
+ * JD: override of tablet layout
+ */
+
+.imageBg #gkHeader {
+  background-image: url('../../../images/background_tablet.jpg');
+}
+
+#gkMenuWrap #gkMobileMenu {
+  background-image: url('../images/tablet_menu.png');
+}

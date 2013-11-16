@@ -73,12 +73,16 @@ class GKTemplateLayout {
 		if($this->API->get('rwd', 1)) {
 			// set media query for small desktops
 			echo '<link rel="stylesheet" href="'.($this->API->URLtemplate()).'/css/small.desktop.css" media="(max-width: '.$template_width.'px)" />' . "\n";	
+			echo '<link rel="stylesheet" href="'.($this->API->URLtemplate()).'/css/small.desktop.override.css" media="(max-width: '.$template_width.'px)" />' . "\n";	
 			// set media query for the tablet.css
 			echo '<link rel="stylesheet" href="'.($this->API->URLtemplate()).'/css/tablet.css" media="(max-width: '.$tablet_width.'px)" />' . "\n";
+			echo '<link rel="stylesheet" href="'.($this->API->URLtemplate()).'/css/tablet.override.css" media="(max-width: '.$tablet_width.'px)" />' . "\n";
 			// set media query for the small tablets
 			echo '<link rel="stylesheet" href="'.($this->API->URLtemplate()).'/css/small.tablet.css" media="(max-width: '.$tablet_small_width.'px)" />' . "\n";	
+			echo '<link rel="stylesheet" href="'.($this->API->URLtemplate()).'/css/small.tablet.override.css" media="(max-width: '.$tablet_small_width.'px)" />' . "\n";	
 			// set media query for the mobile.css
 			echo '<link rel="stylesheet" href="'.($this->API->URLtemplate()).'/css/mobile.css" media="(max-width: '.$mobile_width.'px)" />' . "\n";
+			echo '<link rel="stylesheet" href="'.($this->API->URLtemplate()).'/css/mobile.override.css" media="(max-width: '.$mobile_width.'px)" />' . "\n";
 	       	// CSS to avoid problems with the K2/com_content columns on the smaller screens
 	    	$this->API->addCSSRule('@media screen and (max-width: '.($tablet_width * 0.75).'px) {
 	    	#k2Container .itemsContainer { width: 100%!important; } 
