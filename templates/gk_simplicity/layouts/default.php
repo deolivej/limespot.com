@@ -62,6 +62,10 @@ JHTML::_('behavior.modal');
 	    	<div class="gkPage" id="gkHeaderNav">                    	
 			    <?php $this->layout->loadBlock('logo'); ?>
 			    
+                <div id="lsSignup">
+                  <a href="#" class="button" >Signup</a>
+                </div>
+
 			    <?php if($this->API->get('show_menu', 1)) : ?>
 			    <div id="gkMainMenu">
 			    	<?php

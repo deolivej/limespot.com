@@ -5,3 +5,7 @@
 .imageBg #gkHeader {
   background-image: url('../../../images/background_mobile.jpg');
 }
+
+#lsSignup {
+  display:none;
+}

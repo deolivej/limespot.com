@@ -34,6 +34,17 @@ body.page #gkMenuWrap #gkMainMenu {
   margin-top: 11px;
 }
 
+#lsSignup {
+  height: 81px;
+  float: right;
+  margin-left: 10px;
+}
+
+#lsSignup a {
+  position: relative;
+  top: 25%;
+}
+
 /*
  * regular (non-frontpage) layout
  */
