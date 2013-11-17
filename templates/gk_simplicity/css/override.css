@@ -95,10 +95,38 @@ box.centered.inline .gkIcons {
   background-color: limegreen;
 }
 
-.gkHorizontalSlideLeftColumn a.button {
+.gkHorizontalSlideLeftColumn a.button, a.button {
   background-color: limegreen; 
 }
+ 
 
+/*
+ * tesimonials
+ */
+
+.gkTestimonials figure {
+  margin-bottom: 20px;
+}
+
+.gkTestimonials figure img {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+
+.gkTestimonials figcaption {
+  border-top: 0;
+  background-image: none;
+}
+
+.gkTestimonials > div  {
+  text-align: center;
+}
+
+.gkTestimonials > div > a {
+  display: inline-block;
+  float: none;
+}
 /*
  * some utility classes
  */
@@ -108,7 +136,7 @@ box.centered.inline .gkIcons {
 
 h2 span.lsSuperscript {
   font-size: 16px;
-}
+} 
 
 /*
  * temporary stuff
