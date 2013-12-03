@@ -5,14 +5,28 @@
 /*
  * header/navbar customizations
  */
+ .imageBg #gkHeaderMod h3 {
+   color: #fff;
+ }
+
 .imageBg #gkLogo.cssLogo, #gkMenuWrap #gkLogo.cssLogo {
   background-image: url('../../../images/logo.png');
-  height: 71px;
-  margin-top: 10px;
+  /*height: 71px;
+  margin-top: 10px;*/
 }
 
 .imageBg #gkHeader {
-  background-image: url('../../../images/background.jpg');
+  background-image: none;
+  background-color: rgb(50,50,50);
+}
+
+.imageBg #gkHeaderMod {
+  padding-bottom: 0px;
+}
+
+.imageBg #gkHeaderMod .gk-form {
+  background: none;
+  border: none;
 }
 
 .imageBg #gkHeader > div:first-child, .page #gkMenuWrap {
@@ -20,6 +34,30 @@
   position: fixed;
   width: 100%;
   z-index: 1001;
+}
+
+#gkHeader div.row {
+  margin-bottom: 4em;
+}
+
+#gkHeader div.row:last-child {
+  margin-bottom: 0;
+}
+
+.imageBg #gkHeaderMod .gk-form {
+  margin-top: 0;
+}
+
+#gkHeader .img-placeholder {
+  border: 1px dashed;
+  width: 250px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#gkHeader div.video {
+  padding-top:20%;
 }
 
 body.page #gkMenuWrap {
@@ -44,6 +82,14 @@ body.page #gkMenuWrap #gkMainMenu {
   position: relative;
   top: 25%;
 }
+
+/*#gkBottom1,#gkBottom3,#gkBottom5 {
+  background-color: rgb(50,50,50);
+}
+ 
+#gkBottom1 h2, #gkBottom3 h2 , #gkBottom5 h2 {
+  color: #fff;
+} */
 
 /*
  * regular (non-frontpage) layout
@@ -103,11 +149,11 @@ box.centered.inline .gkIcons {
  * submit button color
  */
 .imageBg #gkHeaderMod input[type="submit"] {
-  background-color: limegreen;
+  background-color: rgb(75,175,75);
 }
 
 .gkHorizontalSlideLeftColumn a.button, a.button {
-  background-color: limegreen; 
+  background-color: rgb(75,175,75);
 }
  
 
@@ -148,6 +194,86 @@ box.centered.inline .gkIcons {
 h2 span.lsSuperscript {
   font-size: 16px;
 } 
+
+.marg-bot-1 {
+  margin-bottom: 0.5em !important;
+}
+
+/*
+ * icons
+ */
+.lsIcon {
+  text-align: left;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+}
+
+.lsIcon-group {
+  background-image: url('../images/group.png');
+  padding-left: 40px;
+}
+
+.lsIcon-lock {
+  background-image: url('../images/lock.png');
+  padding-left: 26px;
+}
+
+.lsIcon-ok {
+  background-image: url('../images/ok.png');
+  padding-left: 31px;
+}
+
+.lsIcon-beer {
+  background-image: url('../images/beer.png');
+  padding-left: 28px;
+}
+
+/*
+ * slide show 
+ */
+.gkIsWrapper-gk_startup .gkIsImage .gkIsPrev {
+  background-image: url('../images/chevron-left.png');
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+.gkIsWrapper-gk_startup .gkIsImage .gkIsPrev:hover {
+  -webkit-transform: scale(1.7);
+  -moz-transform: scale(1.7);
+  -ms-transform: scale(1.7);
+  -o-transform: scale(1.7);
+}
+.gkIsWrapper-gk_startup .gkIsImage .gkIsNext {
+  background-image: url('../images/chevron-right.png');
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+.gkIsWrapper-gk_startup .gkIsImage .gkIsNext:hover {
+  -webkit-transform: scale(1.7);
+  -moz-transform: scale(1.7);
+  -ms-transform: scale(1.7);
+  -o-transform: scale(1.7);
+}
+.gkIsWrapper-gk_startup .gkIsImage .gkIsPagination {
+  display: none;
+}
+
+/*
+ * custom styling for section 5, because we stack two modules
+ */
+#gkBottom5 div.box {
+  width: 100%;
+  float: none;
+  clear: both;
+}
+
+#gkBottom5 div.box.centered {
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important
+}
 
 /*
  * temporary stuff

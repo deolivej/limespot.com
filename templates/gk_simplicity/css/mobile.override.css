@@ -2,8 +2,13 @@
  * JD: override of mobile layout
  */
 
+.imageBg #gkHeaderMod {
+    padding-bottom:0px;
+}
+
 .imageBg #gkHeader {
-  background-image: url('../../../images/background_mobile.jpg');
+  background-image: none;
+  background-color: rgb(50,50,50);
 }
 
 #lsSignup {

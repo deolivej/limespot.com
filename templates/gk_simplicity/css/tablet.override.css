@@ -3,7 +3,8 @@
  */
 
 .imageBg #gkHeader {
-  background-image: url('../../../images/background_tablet.jpg');
+  background-image: none;
+  background-color: rgb(50,50,50);
 }
 
 #gkMenuWrap #gkMobileMenu {

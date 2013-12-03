@@ -2,3 +2,6 @@
  * JD: override of small tablet layout
  */
 
+.imageBg #gkHeaderMod {
+    padding-bottom:0px;
+}

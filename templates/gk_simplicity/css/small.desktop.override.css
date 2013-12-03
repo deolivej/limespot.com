@@ -2,3 +2,6 @@
  * JD: override of small desktop layout
  */
 
+.imageBg #gkHeaderMod {
+    padding-bottom: 0px;
+}
