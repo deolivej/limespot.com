@@ -83,14 +83,6 @@ body.page #gkMenuWrap #gkMainMenu {
   top: 25%;
 }
 
-/*#gkBottom1,#gkBottom3,#gkBottom5 {
-  background-color: rgb(50,50,50);
-}
- 
-#gkBottom1 h2, #gkBottom3 h2 , #gkBottom5 h2 {
-  color: #fff;
-} */
-
 /*
  * regular (non-frontpage) layout
  */
@@ -106,15 +98,6 @@ div.itemBody.containsItemInfo {
   margin-left: 10%;
   margin-right: 10%;
 }
-/*
-article div.itemBody div {
-  margin-right: 10%;
-}
-
-section.blog-featured {
-  margin-left: 10%;
-}
-*/
 
 #gkMainbody article.item-pageabout div.box.centered {
   padding-top: 10px !important;
@@ -169,11 +152,16 @@ box.centered.inline .gkIcons {
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
+  /*border: 28px solid #f8f8f8;*/
+  border: 1px solid #eee;
+  margin: 5px;
 }
 
 .gkTestimonials figcaption {
   border-top: 0;
   background-image: none;
+  text-align: center;
+  padding-top: 30px;
 }
 
 .gkTestimonials > div  {
@@ -184,6 +172,7 @@ box.centered.inline .gkIcons {
   display: inline-block;
   float: none;
 }
+
 /*
  * some utility classes
  */
