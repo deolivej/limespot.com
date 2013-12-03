@@ -265,6 +265,13 @@ h2 span.lsSuperscript {
 }
 
 /*
+ * e-commerce providers
+ */
+#lsEcommerceProviders div.gkIconArea {
+  height: 100px;
+}
+
+/*
  * temporary stuff
  */
 .lsRocket1 {
