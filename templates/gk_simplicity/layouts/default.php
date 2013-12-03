@@ -167,6 +167,7 @@ JHTML::_('behavior.modal');
 	</div>
 	    
 	<?php if($this->API->modules('bottom1')) : ?>
+    <a href="gkBottom1"></a>
 	<section id="gkBottom1">
 		<div class="gkCols6<?php if($this->API->modules('bottom1') > 1) : ?> gkNoMargin<?php endif; ?> gkPage">
 			<jdoc:include type="modules" name="bottom1" style="<?php echo $this->module_styles['bottom1']; ?>" modnum="<?php echo $this->API->modules('bottom1'); ?>" />
@@ -179,6 +180,7 @@ JHTML::_('behavior.modal');
 	<?php endif; ?>
     
     <?php if($this->API->modules('bottom2')) : ?>
+    <a href="gkBottom2"></a>
     <section id="gkBottom2">
     	<div class="gkCols6<?php if($this->API->modules('bottom2') > 1) : ?> gkNoMargin<?php endif; ?> gkPage">
     		<jdoc:include type="modules" name="bottom2" style="<?php echo $this->module_styles['bottom2']; ?>" modnum="<?php echo $this->API->modules('bottom2'); ?>" />
@@ -191,6 +193,7 @@ JHTML::_('behavior.modal');
     <?php endif; ?>
     
     <?php if($this->API->modules('bottom3')) : ?>
+    <a href="gkBottom3"></a>
     <section id="gkBottom3">
     	<div class="gkCols6<?php if($this->API->modules('bottom3') > 1) : ?> gkNoMargin<?php endif; ?> gkPage">
     		<jdoc:include type="modules" name="bottom3" style="<?php echo $this->module_styles['bottom3']; ?>" modnum="<?php echo $this->API->modules('bottom3'); ?>" />
@@ -203,6 +206,7 @@ JHTML::_('behavior.modal');
     <?php endif; ?>
     
     <?php if($this->API->modules('bottom4')) : ?>
+    <a href="gkBottom4"></a>
     <section id="gkBottom4">
     	<div class="gkCols6<?php if($this->API->modules('bottom4') > 1) : ?> gkNoMargin<?php endif; ?> gkPage">
     		<jdoc:include type="modules" name="bottom4" style="<?php echo $this->module_styles['bottom4']; ?>" modnum="<?php echo $this->API->modules('bottom4'); ?>" />
@@ -215,6 +219,7 @@ JHTML::_('behavior.modal');
     <?php endif; ?>
     
     <?php if($this->API->modules('bottom5')) : ?>
+    <a href="gkBottom5"></a>
     <section id="gkBottom5">
     	<div class="gkCols6<?php if($this->API->modules('bottom5') > 1) : ?> gkNoMargin<?php endif; ?> gkPage">
     		<jdoc:include type="modules" name="bottom5" style="<?php echo $this->module_styles['bottom5']; ?>" modnum="<?php echo $this->API->modules('bottom5'); ?>" />
@@ -227,6 +232,7 @@ JHTML::_('behavior.modal');
     <?php endif; ?>
     
     <?php if($this->API->modules('bottom6')) : ?>
+    <a href="gkBottom6"></a>
     <section id="gkBottom6">
     	<div class="gkCols6<?php if($this->API->modules('bottom6') > 1) : ?> gkNoMargin<?php endif; ?> gkPage">
     		<jdoc:include type="modules" name="bottom6" style="<?php echo $this->module_styles['bottom6']; ?>" modnum="<?php echo $this->API->modules('bottom6'); ?>" />
