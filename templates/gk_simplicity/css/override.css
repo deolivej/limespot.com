@@ -188,6 +188,12 @@ h2 span.lsSuperscript {
   margin-bottom: 0.5em !important;
 }
 
+p.lsLeftwise {
+clear: both;
+font-size: 18px;
+font-weight: 300;
+}
+
 /*
  * icons
  */
