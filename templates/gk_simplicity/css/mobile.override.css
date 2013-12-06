@@ -4,12 +4,22 @@
 
 .imageBg #gkHeaderMod {
     padding-bottom:0px;
+    padding-top: 90px !important;
+}
+
+.imageBg #gkHeaderMod input[type="submit"] {
+  width:inherit;
+}
+
+.imageBg #gkHeaderMod .gk-form {
+  margin-top: 0;
 }
 
 .imageBg #gkHeader {
   background-image: none;
   background-color: rgb(50,50,50);
 }
+
 
 #lsSignup {
   display:none;

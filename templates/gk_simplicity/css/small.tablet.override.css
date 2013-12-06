@@ -4,4 +4,21 @@
 
 .imageBg #gkHeaderMod {
     padding-bottom:0px;
+    padding-top: 90px;
+}
+
+.imageBg #gkHeaderMod input[type="submit"] {
+  width:inherit;
+}
+
+.gkIcons > div {
+  max-width: inherit;
+}
+
+.gkIcons.bi > div {
+   width: inherit;
+}
+
+.gkTestimonials > div {
+  margin-top: 30px;
 }

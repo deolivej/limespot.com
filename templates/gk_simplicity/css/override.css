@@ -120,9 +120,14 @@ div.itemBody.containsItemInfo {
   height: 200px;
 }
 
+.gkIcons > div h2 {
+  margin-bottom: 0px; 
+}
+
 .gkIcons.bi > div {
    width: 50%;
 }
+
 
 box.centered.inline .gkIcons {
   margin-top: 0px;
@@ -144,10 +149,6 @@ box.centered.inline .gkIcons {
  * tesimonials
  */
 
-.gkTestimonials figure {
-  margin-bottom: 20px;
-}
-
 .gkTestimonials figure img {
   border-radius: 0;
   -webkit-border-radius: 0;
@@ -161,7 +162,7 @@ box.centered.inline .gkIcons {
   border-top: 0;
   background-image: none;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 15px;
 }
 
 .gkTestimonials > div  {
@@ -194,6 +195,9 @@ font-size: 18px;
 font-weight: 300;
 }
 
+.gkCentered {
+  margin-bottom:0.5em;
+}
 /*
  * icons
  */
@@ -265,10 +269,10 @@ font-weight: 300;
   clear: both;
 }
 
-#gkBottom5 div.box.centered {
+/*#gkBottom5 div.box.centered {
   padding-bottom: 0px !important;
   margin-bottom: 0px !important
-}
+}*/
 
 /*
  * e-commerce providers
