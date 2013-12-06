@@ -9,6 +9,7 @@
 
 #gkMenuWrap #gkMobileMenu {
   background-image: url('../images/tablet_menu.png');
+  margin-top: 24px;
 }
 
 .imageBg #gkHeaderMod .gk-form {

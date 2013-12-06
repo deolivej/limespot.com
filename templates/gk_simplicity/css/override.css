@@ -11,6 +11,7 @@
 
 .imageBg #gkLogo.cssLogo, #gkMenuWrap #gkLogo.cssLogo {
   background-image: url('../../../images/logo.png');
+  margin-top: 24px;
   /*height: 71px;
   margin-top: 10px;*/
 }
