@@ -199,6 +199,17 @@ font-weight: 300;
 .gkCentered {
   margin-bottom:0.5em;
 }
+
+ul.bullet {
+  margin-left: 40px;
+}
+
+ul.bullet li {
+  list-style-type: disc;
+  border-bottom: 0;
+  padding: 0px 0px;
+}
+
 /*
  * icons
  */
@@ -299,6 +310,40 @@ font-weight: 300;
 #lsEcommerceProviders div.gkIconArea {
   height: 100px;
 }
+
+/*
+ * faq
+ */
+.item-pagefaq h2 {
+  margin-bottom: 1em;
+}
+
+/*
+ * about page
+ */
+.item-pageabout h2 {
+  margin-bottom: 1em;
+}
+
+/*.item-pagecareers h2 {
+  margin-bottom: 1em;
+}*/
+
+/*
+ * careers page
+ */
+#gkMainbody .item-pagecareers div.box {
+  padding-top: 0px !important;
+}
+
+/*
+ * sub-menu
+ */
+.gkmenu a {
+  text-decoration: none;
+}
+
+
 
 /*
  * temporary stuff
