@@ -312,6 +312,21 @@ ul.bullet li {
 }
 
 /*
+ * blog
+ */
+section.blog-featured {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+section.blog-featured header h1 {
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 44px;
+  /*padding-bottom: 15px;*/
+  /*text-align: center;*/
+}
+/*
  * faq
  */
 .item-pagefaq h2 {
