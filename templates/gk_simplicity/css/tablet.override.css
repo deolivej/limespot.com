@@ -3,8 +3,21 @@
  */
 
 .imageBg #gkHeader {
-  background-image: none;
-  background-color: rgb(50,50,50);
+  background-image: url('../../../images/bg_tablet.jpg');
+  /*background-color: rgb(50,50,50);*/
+}
+
+.imageBg #gkHeaderMod {
+    padding-top: 100px;
+    padding-bottom: 350px;
+}
+
+.imageBg #lsHeaderTagline2 h2 {
+  font-size: 40px;
+}
+
+#gkHeader div.row {
+  margin-bottom: 1em;
 }
 
 #gkMenuWrap #gkMobileMenu {

@@ -83,6 +83,8 @@ class GKTemplateLayout {
 			// set media query for the mobile.css
 			echo '<link rel="stylesheet" href="'.($this->API->URLtemplate()).'/css/mobile.css" media="(max-width: '.$mobile_width.'px)" />' . "\n";
 			echo '<link rel="stylesheet" href="'.($this->API->URLtemplate()).'/css/mobile.override.css" media="(max-width: '.$mobile_width.'px)" />' . "\n";
+            // JD: adding addtional "small mobile" override
+			echo '<link rel="stylesheet" href="'.($this->API->URLtemplate()).'/css/small.mobile.override.css" media="(max-width: 650px)" />' . "\n";
 	       	// CSS to avoid problems with the K2/com_content columns on the smaller screens
 	    	$this->API->addCSSRule('@media screen and (max-width: '.($tablet_width * 0.75).'px) {
 	    	#k2Container .itemsContainer { width: 100%!important; } 

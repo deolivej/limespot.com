@@ -2,8 +2,26 @@
  * JD: override of mobile layout
  */
 
+.imageBg #gkHeaderMod h1 {
+  font-size: 28px;
+}
+
+.imageBg #lsHeaderTagline1 {
+  display: none;
+}
+
+.imageBg #lsHeaderTagline2 h2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.imageBg #lsHeaderTagline2 h3 {
+  font-size: 25px;
+  line-height: 40px;
+}
+
 .imageBg #gkHeaderMod {
-    padding-bottom:0px;
+    padding-bottom: 300px !important;
     padding-top: 90px !important;
 }
 
@@ -16,10 +34,8 @@
 }
 
 .imageBg #gkHeader {
-  background-image: none;
-  background-color: rgb(50,50,50);
+  background-image: url('../../../images/bg_mobile.jpg');
 }
-
 
 #lsSignup {
   display:none;

@@ -1,0 +1,30 @@
+
+.imageBg #gkHeader {
+  background-image: url('../../../images/bg_small_mobile.jpg');
+}
+
+.imageBg #gkHeaderMod {
+  padding-bottom: 350px !important;
+}
+
+.imageBg #lsHeaderTagline1 {
+   display: table;
+}
+
+.imageBg #lsHeaderTagline1 div h1:first-child {
+  display: none;
+}
+
+.imageBg #lsHeaderTagline1 #alt {
+  display: block !important;
+}
+
+.imageBg #lsHeaderTagline1 #alt span {
+  color: rgb(0,210,221);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.imageBg #lsHeaderTagline2 {
+  display: none;
+}

@@ -5,24 +5,34 @@
 /*
  * header/navbar customizations
  */
- .imageBg #gkHeaderMod h3 {
-   color: #fff;
- }
+
+.imageBg #gkHeaderMod h1 {
+  color: black;
+}
+
+.imageBg #lsHeaderTagline2 h2 {
+  color: rgb(0,210,221);
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.imageBg #lsHeaderTagline2 h3 {
+  color: black;
+}
 
 .imageBg #gkLogo.cssLogo, #gkMenuWrap #gkLogo.cssLogo {
   background-image: url('../../../images/logo.png');
   margin-top: 24px;
-  /*height: 71px;
-  margin-top: 10px;*/
 }
 
 .imageBg #gkHeader {
-  background-image: none;
-  background-color: rgb(50,50,50);
+  background: #fff url('../../../images/bg.jpg') no-repeat;
 }
 
 .imageBg #gkHeaderMod {
-  padding-bottom: 0px;
+  padding-bottom: 500px;
+  padding-top: 120px;
 }
 
 .imageBg #gkHeaderMod .gk-form {
@@ -55,6 +65,22 @@
   height: 250px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.imageBg #gkHeaderMod .gk-video-link {
+  background-image: url('../images/play-icon-48.png');
+  background-position-x: left;
+  color: rgb(105,105,105);
+  font-weight: 400;
+  height: 64px;
+  line-height: 64px;
+  padding-left: 58px;
+  padding-top: 0px;
+}
+
+.imageBg #gkHeaderMod .gk-video-link:hover {
+    background-position-x: 5px;
+    color: #fec54c;
 }
 
 #gkHeader div.video {
