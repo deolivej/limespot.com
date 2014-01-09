@@ -111,6 +111,32 @@ body.page #gkMenuWrap #gkMainMenu {
 }
 
 /*
+ * image slider
+ */
+.gkHorizontalSlide {
+  margin-left: 10px;
+}
+
+.gkHorizontalSlideRightColumn {
+  border-right: none;
+  margin-bottom:-100px;
+}
+
+.gkHorizontalSlideRightColumn img {
+  border: 1px solid #eee;
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+}
+
+/*
+ *
+ */
+ .lsTargetIcons img {
+   display: table-cell;
+   margin-left: auto;
+   margin-right: auto;
+ }
+/*
  * regular (non-frontpage) layout
  */
 article aside {
@@ -234,6 +260,14 @@ ul.bullet li {
   list-style-type: disc;
   border-bottom: 0;
   padding: 0px 0px;
+}
+
+.lsVerticalSpace25 div.row {
+  margin-bottom: 25px;
+}
+
+img.lsImgBorder {
+  border: 1px solid #eee;
 }
 
 /*
