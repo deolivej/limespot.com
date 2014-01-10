@@ -187,6 +187,30 @@ box.centered.inline .gkIcons {
 }
 
 /*
+ * tesimonials
+ */
+.gkTestimonials figure img {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border: 1px solid #eee;
+  margin: 5px;
+}
+.gkTestimonials figcaption {
+  border-top: 0;
+  background-image: none;
+  text-align: center;
+  padding-top: 15px;
+}
+.gkTestimonials > div  {
+  text-align: center;
+}
+.gkTestimonials > div > a {
+  display: inline-block;
+  float: none;
+}
+
+/*
  * utility classes
  */
 .lsSuperscript {
