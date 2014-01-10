@@ -1,4 +1,5 @@
 
+
 .imageBg #gkHeader {
   background-image: url('../../../images/bg_small_mobile.jpg');
 }
@@ -27,4 +28,8 @@
 
 .imageBg #lsHeaderTagline2 {
   display: none;
+}
+
+#lsSignup {
+  display:none;
 }

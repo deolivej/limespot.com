@@ -2,6 +2,13 @@
  * JD: override of tablet layout
  */
 
+#gkMainMenu {
+  display: inherit !important;
+}
+#gkExtraMenu {
+  display: inherit !important;
+}
+
 .imageBg #gkHeader {
   background-image: url('../../../images/bg_tablet.jpg');
   /*background-color: rgb(50,50,50);*/
@@ -20,13 +27,15 @@
   margin-bottom: 1em;
 }
 
+/*
+ * force mobile menu to engage at smaller form factor
+ */
 #gkMobileMenu {
-  background-image: url('../images/tablet_menu_white.png');
+  background-image: none;
 }
 
 #gkMenuWrap #gkMobileMenu {
-  background-image: url('../images/tablet_menu_white.png');
-  margin-top: 24px;
+  background-image: none;
 }
 
 .imageBg #gkHeaderMod .gk-form {

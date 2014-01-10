@@ -2,6 +2,21 @@
  * JD: override of mobile layout
  */
 
+#gkMobileMenu {
+  background-image: url('../images/tablet_menu_white.png');
+}
+
+#gkMenuWrap #gkMobileMenu {
+  background-image: url('../images/tablet_menu_white.png');
+  margin-top: 24px;
+}
+#gkMainMenu {
+  display: none !important;
+}
+#gkExtraMenu {
+  display: none !important;
+}
+
 .imageBg #gkHeaderMod h1 {
   font-size: 28px;
 }
@@ -35,8 +50,4 @@
 
 .imageBg #gkHeader {
   background-image: url('../../../images/bg_mobile.jpg');
-}
-
-#lsSignup {
-  display:none;
 }
