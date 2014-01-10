@@ -24,7 +24,7 @@ $view = JRequest::getCmd('view', '');
 define('GK_COM_USERS', $option == 'com_users' && ($view == 'login' || $view == 'registration'));
 // other variables
 $btn_login_text = ($userID == 0) ? JText::_('TPL_GK_LANG_LOGIN') : JText::_('TPL_GK_LANG_LOGOUT');
-$tpl_page_suffix = $this->page_suffix != '' ? ' class="'.$this->page_suffix.'"' : '';
+$tpl_page_suffix = $this->page_suffix != '' ? ' class="'.$this->page_suffix.'"' : ' class="page"';
 // make sure that the modal will be loaded
 JHTML::_('behavior.modal');
 
@@ -63,7 +63,7 @@ JHTML::_('behavior.modal');
 			    <?php $this->layout->loadBlock('logo'); ?>
 			    
                 <div id="lsSignup">
-                  <a href="#" class="button" >Signup</a>
+                  <a href="index.php?option=com_content&view=article&id=86" class="button" >Pre-register</a>
                 </div>
 
 			    <?php if($this->API->get('show_menu', 1)) : ?>

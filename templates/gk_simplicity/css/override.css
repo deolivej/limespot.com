@@ -66,7 +66,6 @@
   position: relative;
   top: 25%;
   background-color: rgb(164,220,3);
-  font-weight: bolder;
 }
 
 /* other pages */
@@ -156,6 +155,11 @@ body.page #gkMenuWrap #gkMainMenu {
  * simplcity overrides
  */
 
+/* boxes */
+.box.centered h4 {
+  text-align: center;
+}
+
 /* grid/icon layout stuff */
 .gkIconArea {
   background: none;
@@ -190,6 +194,7 @@ box.centered.inline .gkIcons {
 }
 .gkHorizontalSlideLeftColumn a.button, a.button {
   background-color: rgb(164,220,3);
+  color: white !important;
   font-weight: bolder;
 }
  
@@ -222,6 +227,11 @@ box.centered.inline .gkIcons {
 }
 .gkIsWrapper-gk_startup .gkIsImage .gkIsPagination {
   display: none;
+}
+
+/* forms */
+.box.centered select.form-control {
+  height: 46px;
 }
 
 /*
@@ -283,6 +293,9 @@ ul.bullet li {
 
 img.lsImgBorder {
   border: 1px solid #eee;
+}
+.pull-right {
+  float: right;
 }
 
 /*
@@ -392,4 +405,14 @@ section.blog-featured header h1 {
 /* careers page */
 #gkMainbody .item-pagecareers div.box {
   padding-top: 0px !important;
+}
+
+/* other pages */
+#gkMainbody article.item-page div.box.centered {
+  padding-top: 0px !important;
+  padding-bottom: 25px !important;
+  margin-bottom: 0px
+}
+.item-page h2.header {
+  margin-bottom: 1em;
 }
