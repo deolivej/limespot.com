@@ -296,9 +296,13 @@ img.lsImgBorder {
   float: none;
   clear: both;
 }
-#lsEcommerceProviders div.gkIconArea {
-  height: 100px;
+#lsEcommerceProviders img {
+  width: 250px;
+ display: table-cell;
+ margin-left: auto;
+ margin-right: auto;
 }
+
 .lsTargetIcons img {
  display: table-cell;
  margin-left: auto;
