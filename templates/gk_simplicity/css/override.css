@@ -189,7 +189,8 @@ box.centered.inline .gkIcons {
   border: 1px solid #eee;
 }
 .gkHorizontalSlideLeftColumn a.button, a.button {
-  background-color: rgb(75,175,75);
+  background-color: rgb(164,220,3);
+  font-weight: bolder;
 }
  
 /* slide show  */
