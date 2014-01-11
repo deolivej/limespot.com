@@ -19,7 +19,7 @@
   width: 100%;
   z-index: 1001;
   border-bottom: 15px solid;
-  border-color: rgba(164,220,3,0.8);
+  border-color: rgba(50,205,50,0.8);
 }
 
 .imageBg #gkHeaderMod input[type="submit"] {
@@ -64,7 +64,7 @@
 #lsSignup a {
   position: relative;
   top: 25%;
-  background-color: rgb(164,220,3);
+  background-color: rgb(50,205,50);
 }
 
 /* other pages */
@@ -192,7 +192,7 @@ box.centered.inline .gkIcons {
   border: 1px solid #eee;
 }
 .gkHorizontalSlideLeftColumn a.button, a.button {
-  background-color: rgb(164,220,3);
+  background-color: rgb(50,205,50);
   color: white !important;
   font-weight: bolder;
 }
