@@ -154,11 +154,6 @@ body.page #gkMenuWrap #gkMainMenu {
  * simplcity overrides
  */
 
-/* boxes */
-.box.centered h4 {
-  text-align: center;
-}
-
 /* grid/icon layout stuff */
 .gkIconArea {
   background: none;
@@ -302,6 +297,14 @@ img.lsImgBorder {
    margin-left: auto;
    margin-right: auto;
 }
+
+h4.centered {
+  text-align: center;
+}
+h5.centered {
+  text-align: center;
+}
+
 /*
  * icons
  */
