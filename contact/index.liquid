@@ -7,6 +7,9 @@
 
     {% include 'head' %}
     <style>
+      #ls-thanks {
+        display: none;
+      }
       ul {
         list-style-type: none;
       }
@@ -23,8 +26,16 @@
           margin-top: 2em;
           padding-right: 15px;
         }
-      }*/
+      }
     </style>
+    <script>
+      function send_message() {
+        $.post("/contact.php", $("#ls-contact-form").serialize());
+        $('#ls-thanks').show();
+        $("#ls-contact-form")[0].reset();
+      }
+    </script> 
+              
   </head>
   
   <body onload="init()">
@@ -86,20 +97,18 @@
             <div class="form-group">
               <div class="col-sm-12">
                 <button type="button" class="btn pull-right" 
-                  onclick="submitMessage();">Send Message</button>
+                  onclick="send_message();">Send Message</button>
               </div>
-              <script>
-                function submitMessage() {
-                  $.post("./contact.php", $("#ls-contact-form").serialize());
-                  $('#thanks').modal('show');
-                  $("#contactform")[0].reset();
-                }
-              </script>
             </div>
-          </form>
+            </form>
           </div>
         </div>        
-      </div>    
+        <div class="row">
+          <div class="col-sm-12">
+            <h3 id="ls-thanks">Thanks for the message! We will be in touch soon.</h3>
+          </div>
+        </div>
+      </div>
 
       {% include 'footer' %}
     </div>

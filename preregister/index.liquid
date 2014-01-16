@@ -4,6 +4,17 @@
     <title>LimeSpot</title>
 
     {% include 'head' %}
+    <style>
+    #ls-thanks {
+        display: none;
+    }
+    </style>
+    <script>
+        function submit_join() {
+            $.post("/join.php", $('#ls-join-form').serialize());
+            $('#ls-thanks').show();
+        }
+    </script>
   </head>
   
   <body onload="init()">
@@ -364,10 +375,11 @@
           </div>
           <div class="row">
             <div class="col-sm-12">
-               <a class="ls-btn pull-right" onclick="lsSubmitJoin()">Send</a>
+               <a class="ls-btn pull-right" onclick="submit_join()">Send</a>
             </div>
           </div>
         </form>
+        <h3 id="ls-thanks">Thank you for pre-registering! We will be in touch with you very soon.</h3>
       </div>
       </div>  
       {% include 'footer' %}
