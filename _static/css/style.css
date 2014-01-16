@@ -129,6 +129,10 @@ button.btn:hover, a.ls-btn:hover {
   color: white;
 }
 
+button.btn:focus, a.ls-btn:focus {
+  color: white;
+}
+
 a.ls-btn {
   display: inline-block;
   font-size: 14px;
