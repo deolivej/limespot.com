@@ -256,6 +256,10 @@ a.ls-btn {
   margin-bottom: 2em;
 }*/
 
+#new-sales-channel p {
+  padding-left: 10%;
+}
+
 #new-sales-channel p:first-child {
   padding-top: 120px;
 }
