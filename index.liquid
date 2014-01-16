@@ -12,14 +12,12 @@
     </style>
   </head>
   
-  <body onload="init()">
+  <body onload="limespot.init()">
     {% include 'nav' %}
       
     <div class="ls-page">
-      <!--img id="ls-banner-img" class="img-responsive"></img-->
       <div id="slides">
-        <img src="img/bg-male.jpg"/>
-        <img src="img/bg-female.jpg"/>
+
       </div>
 
       <div class="ls-section">
@@ -241,6 +239,12 @@
 
     {% include 'endbody' %}
     <script>
+      // randomize images for slides
+      var images = limespot.shuffle(['img/bg-male.jpg','img/bg-female.jpg']);
+      for (var i = 0; i < images.length; i++) {
+        $("#slides").append('<img src="'+images[i]+'"></img>');
+      }
+
       $(function(){
         $("#slides").slidesjs({
           navigation: {
@@ -259,8 +263,7 @@
             active: false,
             effect: "fade",
             interval: 5000,
-            auto: true,
-            pauseOnHover: true
+            auto: true
           }
         });
       });
