@@ -30,7 +30,7 @@
     </style>
     <script>
       function send_message() {
-        $.post("/contact.php", $("#ls-contact-form").serialize());
+        $.post("../contact.php", $("#ls-contact-form").serialize());
         $('#ls-thanks').show();
         $("#ls-contact-form")[0].reset();
       }
