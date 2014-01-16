@@ -1,0 +1,237 @@
+{% assign page = 'home' %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LimeSpot</title>
+
+    {% include 'head' %}
+
+  </head>
+  
+  <body onload="init()">
+    {% include 'nav' %}
+      
+    <div class="ls-page">
+      <img id="ls-banner-img" class="img-responsive"></img>
+
+      <div class="ls-section">
+        <h2>A New Shopping Experience</h2>
+        <div class="row ls-icon-grid">
+          <div class="col-sm-6">
+            <h3>
+              <span class="ls-icon ls-icon-personal">Personalized</span>
+            </h3>
+            <p>
+              An individual store for each shopper based on their social profile.
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <h3>
+              <span class="ls-icon ls-icon-fun">Social</span>
+            </h3>
+            <p>
+              Online social shopping that mimics real world shopping.
+            </p>
+          </div>
+        </div>
+        <div class="row ls-icon-grid">
+          <div class="col-sm-6">
+            <h3>
+              <span class="ls-icon ls-icon-secure">Private</span>
+            </h3>
+            <p>
+              The shopper is the gatekeeper for their profile information.
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <h3>
+              <span class="ls-icon ls-icon-easy">Simple</span>
+            </h3>
+            <p>
+              The one stop shopping experience.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ls-section ls-section-gray">
+        <h2>The LimeSpot Advantage</h2>
+        <div class="row ls-icon-grid">
+          <div class="col-sm-6">
+            <img src="img/ic-sales-channel.png"></img>
+            <h3>
+              <a href="#">New Sales Channel</a>
+            </h3>
+            <p>Introduce a new sales channel rooted in social networks.</p>
+          </div>
+          <div class="col-sm-6">
+            <img src="img/ic-target-products.png"></img>
+            <h3>
+              <a href="#">Target Your Products</a>
+            </h3>
+            <p>Provide each shopper with products that are right for them.</p>
+          </div>
+        </div>
+        <div class="row ls-icon-grid">
+          <div class="col-sm-6">
+            <img src="img/ic-seamless-integration.png"></img>
+            <h3>
+              <a href="#">Seamless Integration</a>
+            </h3>
+            <p>Integrate seamlessly with your existing e-commerce platform.</p>
+          </div>
+          <div class="col-sm-6">
+            <img src="img/ic-branded-catalogs.png"></img>
+            <h3>
+              <a href="#branded-catalogs">Branded Catalogs</a>
+            </h3>
+            <p>Empower your store with multiple catalogs branded for you.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="new-sales-channel" class="ls-section">
+        <h2>A New Sales Channel</h2>
+        <div class="row">
+          <div class="col-md-6 text-left">
+            <p>
+              LimeSpot introduces a new sales channel by bringing the social to e-commerce. You will be able to use profile information from a variety of social networks to create LimeSpot-powered stores on Facebook or conventional websites. Imagine commanding direct sales and public relations from a single platform!
+            </p>
+            <p>
+              We boost sales efficiency to provide a simple, social, personalized and profitable sales channel. Your shoppers will see products and features they want.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img class="img-responsive ls-img-border ls-img-centered" 
+                 src="img/catalog-fb.jpg"></img>
+          </div>
+        </div>
+      </div>
+
+      <div id="target-your-products" class="ls-section ls-section-gray">
+        <h2>Target Your Products</h2>
+         <div class="row">
+          <div class="col-md-6">  
+            <img class="img-responsive ls-img-border ls-img-centered" 
+                 src="img/catalog-web.jpg"></img>
+          </div>
+          <div class="col-md-6">
+            <div class="row text-left">
+              <div class="col-xs-12">
+                <p>
+                  LimeSpot targets your product offerings based on criteria such as 
+                  gender, age, location and interests.
+                </p>
+              </div>  
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="row">
+                <div class="col-xs-6">
+                  <img src="img/ic-gender.png" alt="Gender">
+                  <h5>Gender</h5>
+                </div>
+                <div class="col-xs-6">
+                  <img src="img/ic-age.png" alt="Age">
+                  <h5>Age</h5>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-xs-6">
+                  <img src="img/ic-location.png" alt="Location">
+                  <h5>Location</h5>
+                </div>
+                <div class="col-xs-6">
+                  <img src="img/ic-interests.png" alt="Interests">
+                  <h5>Interests</h5>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" style="margin-top: 25px">
+              <div class="col-xs-12 text-left">
+                <p>
+                  By utilizing profile information we connect your products to the customers they were designed for.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-4">
+                <img src="img/facebook-logo.png" alt="Facebook">
+              </div>
+              <div class="col-xs-4">
+                <img src="img/twitter-logo.png" alt="Twitter">
+              </div>
+              <div class="col-xs-4">
+                <img src="img/linkedin-logo.png" alt="LinkedIn">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="seamless-integration" class="ls-section">
+        <h2>Seamless Integration</h2>
+        <p class="text-left">
+          The LimeSpot platform integrates with your existing e-commerce system to represent a seamless and realtime data transmission between different channels.
+        </p>
+        <div class="row">
+          <div class="col-sm-4">
+             <img class="img-responsive" src="img/shopify-logo.jpg">
+          </div>
+          <div class="col-sm-4">
+             <img class="img-responsive" class="img-responsive" src="img/bigcommerce-logo.jpg">
+          </div>
+          <div class="col-sm-4">
+             <img class="img-responsive" src="img/magento-logo.jpg">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 col-sm-offset-3" >
+             <img class="img-responsive" src="img/paypal-logo.jpg">
+          </div>
+          <div class="col-sm-3">
+            <img class="img-responsive" src="img/drupal-commerce-logo.jpg">
+          </div>
+          <div class="col-sm-3"></div>
+        </div>
+      </div>
+
+      <div id="branded-catalogs" class="ls-section ls-section-gray">
+        <h2>Branded Catalogs</h2>
+        <p>
+          LimeSpot empowers your store with multiple catalogs and provides a customized layout for different pages, platforms and devices.
+        </p>
+        <div class="row">
+          <div class="col-sm-4">
+            <img class="img-responsive ls-img-border ls-img-centered" src="img/nimany_catalog.jpg"/>
+            <p class="ls-img-caption">
+              Hand-Modified T-shirts, tops, jackets, scarfs and leather goods.
+            </p>
+            <a class="ls-btn" href="https://www.facebook.com/NimanyStudio/app_288640347937103#">View Shop</a>
+          </div>
+          <div class="col-sm-4">
+            <img class="img-responsive ls-img-border ls-img-centered" src="img/harlequin_catalog.jpg"/>
+            <p class="ls-img-caption">
+              Wildlife images screen printed on t-shirts and other garments.
+            </p>
+            <a class="ls-btn" href="https://www.facebook.com/pages/Harlequin-Nature-Graphics-Ltd/117302078351770?sk=app_288640347937103">View Shop</a>
+          </div>
+          <div class="col-sm-4">
+            <img class="img-responsive ls-img-border ls-img-centered" src="img/classic_marine_catalog.jpg"/>
+            <p class="ls-img-caption">
+              Quality new and used marine gear and gifts for the nautically inclined.
+            </p>
+            <a class="ls-btn" href="https://www.facebook.com/ClassicMarine/app_288640347937103">View Shop</a>
+          </div>
+        </div>
+      </div>
+
+      {% include 'footer' %}
+    </div>
+
+    {% include 'postbody' %}
+  </body>
+</html>
+  

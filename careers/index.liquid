@@ -1,0 +1,42 @@
+{% assign page = 'careers' %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LimeSpot Jobs</title>
+
+    {% include 'head' %}
+  </head>
+  
+  <body onload="init()">
+    {% include 'nav' %}
+    
+    <div class="ls-page ls-text-page">
+      <div class="ls-section">
+        <h2>LimeSpot is hiring</h2>
+        <p>
+          Check out our job opportunities and apply today to start your career with LimeSpot!
+        </p>
+
+        <div class="ls-sub-section text-left">
+          <h3><a href="csharp-dev">C# Developer</a></h3>
+          <p>
+            We are seeking a creative and highly skilled senior C# Developer to join the LimeSpot development team. The successful candidate should have a strong understanding of Object Oriented concepts, 5 tier application architecture, SOA, databases, code optimization and a good background in web application concepts. <a href="csharp-dev">Read more ...</a>
+          </p>
+          <h3><a href="web-dev">Web Developer</a></h3>
+          <p>
+            We are seeking a creative and highly skilled senior Web UI Developer to join the LimeSpot development team.The successful candidate should have a good understanding of Object Oriented concepts and a strong background in building responsive dynamic pages utilizing HTML5, CSS3, JavaScript, jQuery and AJAX communicating with RESTful web services. <a href="web-dev">Read more ...</a>
+          </p>
+          <h3><a href="qa-engineer">QA Engineer</a></h3>
+          <p>
+            We are seeking a creative and skilled senior QA Engineer in Test to join the LimeSpot development team. The successful candidate should have a good understanding of Object Oriented concepts and be experienced working as a tester within a Scrum environment. They should be familiar with TDD and Agile testing with a good background in C#, HTML5, CSS3, JavaScript, and AJAX communicating with RESTful web services. <a href="qa-engineer">Read more ...</a>
+          </p>
+        </div>
+      </div>
+
+      {% include 'footer' %}
+    </div>
+
+    {% include 'postbody' %}
+  </body>
+</html>
+  

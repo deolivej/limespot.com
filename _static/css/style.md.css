@@ -1,0 +1,10 @@
+/*
+ * overrides for medium sized screens (tablets)
+ */
+#new-sales-channel p:first-child {
+  padding-top: 0px;
+}
+
+#branded-catalogs img {
+  /*max-width: 400px;*/
+}

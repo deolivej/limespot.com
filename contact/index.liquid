@@ -1,0 +1,109 @@
+{% assign page = 'about' %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact LimeSpot</title>
+
+    {% include 'head' %}
+    <style>
+      ul {
+        list-style-type: none;
+      }
+      #ls-social-connect li {
+        height: 30px;
+      }
+      
+      .row .col-md-6:last-child {
+        padding-right: 10%
+      }
+
+      @media (max-width: 992px) {
+        .row .col-md-6:last-child {
+          margin-top: 2em;
+          padding-right: 15px;
+        }
+      }*/
+    </style>
+  </head>
+  
+  <body onload="init()">
+    {% include 'nav' %}
+    
+    <div class="ls-page">
+      <div class="ls-section">
+        <h2>Contact Us</h2>
+        <div class="row">
+          <div class="col-md-6 text-left">
+            <ul>
+              <li><h4>LimeSpot</h4></li>
+              <li>2200 Oak Bay Avenue</li>
+              <li>PO Box 42023 Oak Bay</li>
+              <li>Victoria, BC, V8R 6T4</li>
+              <li>Canada</li>
+              <li><a href="mailto:connect@limespot.com"</a>connect@limespot.com</li>
+            </ul>
+            <ul id="ls-social-connect">
+              <li><a href="http://twitter.com/LimeSpotConnect" 
+                class="ls-icon ls-icon-social ls-icon-twitter">@LimeSpotConnect</a></li>
+              <li><a href="http://facebook.com/LimeSpotConnect" 
+                class="ls-icon ls-icon-social ls-icon-facebook">facebook.com/LimeSpotConnect</a></li>
+              <li><a href="http://linkedin.com/company/LimeSpot" 
+                class="ls-icon ls-icon-social ls-icon-linkedin">
+                linkedin.com/company/LimeSpot
+              </a></li>
+              <li><a href="skype:LimeSpotConnect?chat" 
+                class="ls-icon ls-icon-social ls-icon-skype">
+                Skype LimeSpotConnect
+              </a></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h4>We look forward to hearing from you.</h4>
+            <form role="form" id="ls-contact-form" class="form-horizontal">
+            <div class="form-group">
+              <div class="col-sm-6">
+                <input type="text" class="form-control" name="contactName" 
+                  placeholder="Your name">
+              </div>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" name="contactEmail" 
+                  placeholder="Your email">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" name="contactSubject" 
+                placeholder="Subject">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12">
+              <textarea class="form-control" name="contactBody" rows="4" 
+                placeholder="I want to talk about..."></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-12">
+                <button type="button" class="btn pull-right" 
+                  onclick="submitMessage();">Send Message</button>
+              </div>
+              <script>
+                function submitMessage() {
+                  $.post("./contact.php", $("#ls-contact-form").serialize());
+                  $('#thanks').modal('show');
+                  $("#contactform")[0].reset();
+                }
+              </script>
+            </div>
+          </form>
+          </div>
+        </div>        
+      </div>    
+
+      {% include 'footer' %}
+    </div>
+    
+    {% include 'postbody' %}
+  </body>
+</html>
