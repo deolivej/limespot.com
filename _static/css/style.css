@@ -205,18 +205,20 @@ a.ls-btn {
 .ls-icon-social {
   padding-left: 35px;  
 }
-
+.ls-icon-email {
+   background-image: url('../img/ic-email-light.png');
+}
 .ls-icon-facebook {
-   background-image: url('../img/ic-twitter.png'); 
+   background-image: url('../img/ic-facebook-light.png');
 }
 .ls-icon-twitter {
-   background-image: url('../img/ic-facebook.png'); 
+   background-image: url('../img/ic-twitter-light.png');
 }
 .ls-icon-linkedin {
-   background-image: url('../img/ic-linkedin.png'); 
+   background-image: url('../img/ic-linkedin-light.png');
 }
 .ls-icon-skype {
-   background-image: url('../img/ic-skype.png'); 
+   background-image: url('../img/ic-skype-light.png');
 }
 
 .ls-img-border {
