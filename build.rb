@@ -25,7 +25,7 @@ class Renderer
       t = Liquid::Template.parse(template.read)
       
       g = File.open('%s/%s' % [dest_dir, file.sub('.liquid','.html')], 'w')
-      g.write(t.render(@config))
+      g.write(t.render('root_path' => '../' * dir.count('/')))
       g.close()
     ensure
       template.close()
