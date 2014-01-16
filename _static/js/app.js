@@ -1,11 +1,11 @@
 function init() {
   // randomly choose background image
-  var x = Math.floor(Math.random()*10);
-  var banner = document.getElementById('ls-banner-img');
-  if (banner != null) {
-    banner.setAttribute(
-      "src", x % 2 == 0 ? "img/bg-male.jpg" : "img/bg-female.jpg");
-  }
+  // var x = Math.floor(Math.random()*10);
+  // var banner = document.getElementById('ls-banner-img');
+  // if (banner != null) {
+  //   banner.setAttribute(
+  //     "src", x % 2 == 0 ? "img/bg-male.jpg" : "img/bg-female.jpg");
+  // }
 
   // smooth scroll
   // $(function() {

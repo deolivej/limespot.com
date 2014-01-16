@@ -5,14 +5,22 @@
     <title>LimeSpot</title>
 
     {% include 'head' %}
-
+   <style>
+      #slides {
+        display:none;
+      }
+    </style>
   </head>
   
   <body onload="init()">
     {% include 'nav' %}
       
     <div class="ls-page">
-      <img id="ls-banner-img" class="img-responsive"></img>
+      <!--img id="ls-banner-img" class="img-responsive"></img-->
+      <div id="slides">
+        <img src="img/bg-male.jpg"/>
+        <img src="img/bg-female.jpg"/>
+      </div>
 
       <div class="ls-section">
         <h2>A New Shopping Experience</h2>
@@ -232,5 +240,31 @@
     </div>
 
     {% include 'endbody' %}
+    <script>
+      $(function(){
+        $("#slides").slidesjs({
+          navigation: {
+             active: false
+          },
+          pagination: {
+            active: false
+          },
+          effect: {
+            fade: {
+              speed: 1000,
+              crossfade: true
+            }
+          },
+          play: {
+            active: false,
+            effect: "fade",
+            interval: 5000,
+            auto: true,
+            pauseOnHover: true
+          }
+        });
+      });
+    </script>
+
   </body>
 </html>
