@@ -82,7 +82,7 @@ ul.nav > li.active > a {
   color: black;
   font-size: 14px;
   font-weight: 600;
-  padding-bottom:2px;
+  /*padding-bottom:2px;*/
 }
 
 .nav > li > a:hover {
@@ -162,11 +162,6 @@ a.ls-btn {
   margin-bottom: 70px;
 }
 
-.ls-text-page .ls-section {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
 .ls-sub-section p, .ls-sub-section li {
   font-size: 14px;
 }
@@ -231,9 +226,22 @@ a.ls-btn {
 }
 
 /*
- * tabs
+ * pills
  */
-.nav-tabs {
+ .nav-pills > li > a {
+    padding:8px;
+ }
+ .nav-pills > li.active > a {
+    color: white !important;
+    background-color: limegreen;
+ }
+
+.nav-pills > li.active > a:hover {
+    color: white !important;
+    background-color: limegreen;
+ }
+
+ /*.nav-tabs {
   border: 0;
 }
 .nav-tabs li a {
@@ -248,7 +256,7 @@ a.ls-btn {
 }
 .nav-tabs li.active a:hover {
   border: 0;
-}
+}*/
 
 /*
  * section / page overrides
@@ -283,35 +291,24 @@ a.ls-btn {
 
 #branded-catalogs .ls-img-caption {
   font-size:14px;
-  /*width: 250px;*/
   margin: 1em auto 2em auto;
 }
 
 #ls-faq-tab {
-  margin-bottom:30px;
   text-align:center;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 20px;
-}
-
-#ls-faq-tab > li {
-  font-size:;
 }
 
 #ls-faq-tab > li {
   float:none;
   display:inline-block;
-  /**display:inline;
-  zoom:1;*/
+  /* ie
+  *display:inline;
+  zoom:1;
+  */
 }
 
-#ls-faq-tab > li > a {
-  font-size: 18px;
-}
-
-#ls-faq-tab > li.active > a {
-  color: black;
-  background: url('../img/tab-active.png') no-repeat center 35px;
+#ls-faq-content h4 {
+  margin-top: 2em;
 }
 
 .ls-footer {
