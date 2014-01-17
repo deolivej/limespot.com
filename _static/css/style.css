@@ -259,24 +259,22 @@ a.ls-btn {
 }*/
 
 #new-sales-channel p:first-child {
-  padding-top: 120px;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
 #new-sales-channel p:last-child {
   padding-bottom: 40px;
 }
 
-#target-your-products img {
-  /*max-width: 450px;*/
-}
-
-#target-your-products p:first-child {
-  margin-top: 15px;
+#seamless-integration p {
+  margin-bottom: 4em;
 }
 
 #seamless-integration img {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 4em;
 }
 
 #branded-catalogs img {
