@@ -2,4 +2,12 @@
  * overrides for small screens (phones)
  */
 
+.ls-section {
+  padding-left:10px;
+  padding-right:10px;
+}
 
+.navbar {
+  padding-left: 0px;
+  padding-right: 0px;
+}

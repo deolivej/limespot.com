@@ -37,9 +37,9 @@ a.navbar-brand {
   border: 0;
   border-bottom: 15px solid rgba(50,205,50,0.8);
   border-radius: 0;
-  padding-left: 10px;
-  padding-right: 10px;
   position: fixed;
+  padding-left: 8%;
+  padding-right: 8%;
   z-index: 1001;
   width: 100%;
   min-height: 85px;
@@ -110,8 +110,6 @@ li.ls-nav-button a:hover {
   color: white;
 }
 
-  
-
 /*
  * buttons
  */
@@ -152,7 +150,7 @@ a.ls-btn {
 .ls-section {
   border-top: 1px solid #eee;
   text-align: center;
-  padding: 60px 1em 80px;
+  padding: 60px 8% 80px;
 }
 
 .ls-section-gray {
@@ -259,10 +257,6 @@ a.ls-btn {
   margin-top: 2em;
   margin-bottom: 2em;
 }*/
-
-#new-sales-channel p {
-  padding-left: 10%;
-}
 
 #new-sales-channel p:first-child {
   padding-top: 120px;
