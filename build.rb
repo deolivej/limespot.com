@@ -32,13 +32,19 @@ class Renderer
     end
   end
 
-  def finish()
+  def copy(dir)
     # copy over static resources
-    Dir.foreach('_static') { |f|
+    Dir.foreach(dir) { |f|
       if f != '.' and f != '..'
-        FileUtils.cp_r('%s/%s' % ['_static', f], @build_dir)
+        FileUtils.cp_r('%s/%s' % [dir, f], @build_dir)
       end
     }
+  end
+
+  def finish()
+    # copy over static resources
+    self.copy('_static')
+    self.copy('_php')
   end
 
 end
