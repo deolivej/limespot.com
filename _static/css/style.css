@@ -261,10 +261,9 @@ a.ls-btn {
 /*
  * section / page overrides
  */
-/*#new-sales-channel img.ls-img-border, #target-your-products img.ls-img-border {
-  margin-top: 2em;
-  margin-bottom: 2em;
-}*/
+#new-shopping-experience {
+  border-top: 0;
+}
 
 #new-sales-channel p:first-child {
   padding-top: 80px;
@@ -320,4 +319,45 @@ a.ls-btn {
 .ls-footer p.ls-copyright {
   font-size: 13px;
   margin: 0;
+}
+
+.ls-page .bx-wrapper .bx-viewport {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  left: 0px;
+}
+
+ul.bxslider {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-padding-start: 0px;
+}
+
+div.bx-wrapper .bx-pager.bx-default-pager a {
+  background-color: lightgray;
+  border-radius: 1px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+div.bx-wrapper .bx-pager.bx-default-pager a.active {
+  background-color: limegreen;
+}
+
+div.bx-wrapper .bx-pager.bx-default-pager a:hover {
+  background-color: #fec64d;
+}
+
+div.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+  position: static;
+  bottom: -30px;
+  width: inherit;
+  float:right;
+  padding-top: 5px;
+  margin-right: 2%;
+}
+
+div.bx-wrapper {
+  margin-bottom: 20px;
 }

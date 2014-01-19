@@ -5,6 +5,7 @@
     <title>LimeSpot</title>
 
     {% include 'head' %}
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
    <style>
       #slides {
         display:none;
@@ -16,11 +17,10 @@
     {% include 'nav' %}
       
     <div class="ls-page">
-      <div id="slides">
+      <ul id="slides" class="bxslider">
+      </ul>
 
-      </div>
-
-      <div class="ls-section">
+      <div id="new-shopping-experience" class="ls-section">
         <h2>A New Shopping Experience</h2>
         <div class="row ls-icon-grid">
           <div class="col-sm-6">
@@ -238,33 +238,22 @@
     </div>
 
     {% include 'endbody' %}
+    <script src="js/jquery.bxslider.min.js"></script>
     <script>
       // randomize images for slides
       var images = limespot.shuffle(['img/bg-male.jpg','img/bg-female.jpg']);
       for (var i = 0; i < images.length; i++) {
-        $("#slides").append('<img src="'+images[i]+'"></img>');
+        $("#slides").append('<li><img src="'+images[i]+'"></img></li>');
       }
 
-      $(function(){
-        $("#slides").slidesjs({
-          navigation: {
-             active: false
-          },
-          pagination: {
-            active: false
-          },
-          effect: {
-            fade: {
-              speed: 1000,
-              crossfade: true
-            }
-          },
-          play: {
-            active: false,
-            effect: "fade",
-            interval: 15000,
-            auto: true
-          }
+      $(document).ready(function() {
+        $('#slides').show();
+        $('.bxslider').bxSlider({
+          auto: true,
+          mode: 'fade',
+          speed: 1000,
+          pause: 15000,
+          autoHover: true
         });
       });
     </script>
