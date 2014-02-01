@@ -1,5 +1,5 @@
 .DS_Store
-_build
+_site
 limespot.sublime-project
 limespot.sublime-workspace
 

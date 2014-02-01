@@ -1,9 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>LimeSpot</title>
+---
+layout: default
+name: preregister
+title: LimeSpot
+class: ls-text-page
+---
 
-    {% include 'head' %}
     <style>
     #ls-thanks {
         display: none;
@@ -15,12 +16,8 @@
             $('#ls-thanks').show();
         }
     </script>
-  </head>
   
-  <body onload="limespot.init()">
-    {% include 'nav' %}
-      
-    <div class="ls-page ls-text-page">
+  
       <div class="ls-section">
         <div class="ls-sub-section">
         <h2>Pre-register to be a first mover in personalized shopping. You will be notified when LimeSpot is ready for you to launch your store.</h2>
@@ -382,10 +379,4 @@
         <h3 id="ls-thanks">Thank you for pre-registering! We will be in touch with you very soon.</h3>
       </div>
       </div>  
-      {% include 'footer' %}
-    </div>
-
-    {% include 'endbody' %}
-  </body>
-</html>
   

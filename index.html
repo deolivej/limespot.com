@@ -1,22 +1,9 @@
-{% assign page = 'home' %}
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>LimeSpot</title>
+---
+layout: default
+title: LimeSpot
+name: home
+---
 
-    {% include 'head' %}
-    <link href="css/jquery.bxslider.css" rel="stylesheet" />
-   <style>
-      #slides {
-        display:none;
-      }
-    </style>
-  </head>
-  
-  <body onload="limespot.init()">
-    {% include 'nav' %}
-      
-    <div class="ls-page">
       <ul id="slides" class="bxslider">
       </ul>
 
@@ -233,30 +220,3 @@
           </div>
         </div>
       </div>
-
-      {% include 'footer' %}
-    </div>
-
-    {% include 'endbody' %}
-    <script src="js/jquery.bxslider.min.js"></script>
-    <script>
-      // randomize images for slides
-      var images = limespot.shuffle(['img/bg-male2.jpg','img/bg-female2.jpg','img/bg-gift.jpg']);
-      for (var i = 0; i < images.length; i++) {
-        $("#slides").append('<li><img src="'+images[i]+'"></img></li>');
-      }
-
-      $(document).ready(function() {
-        $('#slides').show();
-        $('.bxslider').bxSlider({
-          auto: true,
-          mode: 'fade',
-          speed: 1000,
-          pause: 15000,
-          autoHover: true
-        });
-      });
-    </script>
-
-  </body>
-</html>

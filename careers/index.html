@@ -1,16 +1,10 @@
-{% assign page = 'careers' %}
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>LimeSpot Jobs</title>
+---
+layout: default
+name: careers
+title: LimeSpot Jobs
+class: ls-text-page
+---
 
-    {% include 'head' %}
-  </head>
-  
-  <body onload="limespot.init()">
-    {% include 'nav' %}
-    
-    <div class="ls-page ls-text-page">
       <div class="ls-section">
         <h2>LimeSpot is hiring</h2>
         <p>
@@ -32,10 +26,3 @@
           </p>
         </div>
       </div>
-
-      {% include 'footer' %}
-    </div>
-
-    {% include 'endbody' %}
-  </body>
-</html>
