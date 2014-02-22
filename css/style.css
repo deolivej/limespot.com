@@ -361,3 +361,39 @@ div.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
 div.bx-wrapper {
   margin-bottom: 20px;
 }
+
+.doc-toc img {
+  width: 50px;
+}
+
+.doc-toc > div > div {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.ls-toc {
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.ls-toc li {
+  max-width: 275px;
+}
+
+.ls-toc ul {
+  list-style-type: none;
+}
+
+.ls-toc > ul {
+  padding-left: 0px;
+}
+
+.ls-toc h4 > a {
+  color: #333;
+}
+
+.inline-block {
+  display: inline-block;
+}
