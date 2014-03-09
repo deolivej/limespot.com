@@ -20,7 +20,7 @@ title: Create or Edit Targeting Rules
 <li>Click Save.</li>
 </ol>
 <p>(See example below: the location of the Copy button for the &#39;Teenager&#39; Targeting Rule) </p>
-<img src="{{ root_path }}/img/create-targeting-1.png"></img>
+<img src="{% root_path %}/img/create-targeting-1.png"></img>
 <h3>Editing a Targeting Rule</h3>
 <ol>
 <li>From the Targeting Rules tab in the LimeSpot administration panel, find the targeting rule you wish to alter and click the Edit button on the same line as that targeting rule.</li>
@@ -28,7 +28,7 @@ title: Create or Edit Targeting Rules
 <li>Click Save.</li>
 </ol>
 <p>(See example below: location of the Edit button for the &#39;Adult&#39; Targeting Rule)</p>
-<img src="{{ root_path }}/img/create-targeting-2.png"></img>
+<img src="{% root_path %}/img/create-targeting-2.png"></img>
 <h3><a id="attributes"></a>Defining a Targeting Rule&#39;s Attributes</h3>
 <p>Before specifying the logic statements of a targeting rule you have to define its basic properties. Each property and its function are listed below. </p>
 <ul>
@@ -49,16 +49,16 @@ title: Create or Edit Targeting Rules
 <li>Liked pages being of a certain category. Targeting rules can check if a person has liked or not liked pages under specific categories. Categories include Baby/Kids Goods, Bags/Luggage, Clothing, Computer, Health/Beauty, Jewellery/Watches, Movies/Music, Office Supplies, Outdoor Gear/Sporting Goods, and Pet Supplies. </li>
 </ul>
 <p>Criteria can be inserted into targeting rules by selecting them on the scrollable list under Targeting Criteria and then clicking the Add Criteria button. A given criterion can be removed by clicking the Delete button in its row. Once a criterion has been inserted its properties can be defined. For example, some criterion can be set to include or exclude certain qualities; and those qualities can also be defined. In some cases qualities are selected from a dropdown list (such as gender), while in other cases qualities are typed in manually (such as keywords to check for Liked pages). See the example below for a Targeting Rule set up for Hockey Fans. </p>
-<img src="{{ root_path }}/img/create-targeting-3.png"></img>
+<img src="{% root_path %}/img/create-targeting-3.png"></img>
 <p>If more than one criterion is used in a targeting rule, compound Boolean logic can be used. Dropdown boxes on either side of the criterion&#39;s description provide an option of inserting Bracket &#39;()&#39; operators. A dropdown box on the right side of each criterion gives the option to insert &#39;AND&#39; or &#39;OR&#39; operators. A basic knowledge of Boolean Logic is required to set up efficient and effective Targeting Rules. As such, a simple description of how Boolean Logic works is provided in this document below, and some examples for implementation of targeting rules can be found in Targeting Rule Logic Examples & Templates.</p>
 <h4>AND Operators</h4>
 <p>In mathematics, AND is a Logical Conjugation of two or more criteria. The output is TRUE only and only if all of the enclosed statements are true. If a single one of the enclosed statements is false entire the output is FALSE. As such, if you want to check that a person has all of the required qualities you should use &#39;AND&#39; operators to do so. This is done by putting an &#39;AND&#39; operator between two or more statements you want to compare; i.e., the &#39;AND&#39; operator at end of a row will compare the statement in the row it is in with the statement in the next row. For instance, one could use the following set of criterion to check if a person is from New York, likes baseball, and is male. The targeting rule will be counted as TRUE only if all of these requirements are met.</p>
-<img src="{{ root_path }}/img/create-targeting-4.png"></img>
+<img src="{% root_path %}/img/create-targeting-4.png"></img>
 <h4>OR Operators</h4>
 <p>While using OR operator, the output is TRUE if any one or more of the enclosed statements are TRUE. If you want to check that a person has at least one of several qualities you should use OR operators to do so. This is done by putting an OR operator between two statements you want to compare; i.e., the OR operator at end of a row will compare the statement in the row it&#39;s in with the statement in the next row. For instance, one could use the following set of criterion to check if a person likes dogs or cats. The targeting rule will be counted as TRUE if at least one of these requirements is met.</p>
-<img src="{{ root_path }}/img/create-targeting-5.png"></img>
+<img src="{% root_path %}/img/create-targeting-5.png"></img>
 <h4>Bracket Operators</h4>
 <p>These operators are used in conjugation with &#39;AND&#39; &&#39;OR&#39; operators to perform complicated comparisons of targeting criteria. All the statements placed within Brackets are evaluated before the statements placed outside of Brackets. For example, the following targeting rule would first check if a person likes tennis or if their age is more than thirty-five. If at least one of these conditions is TRUE, then the content within brackets is treated as TRUE. After evaluation of criteria within Brackets, targeting rule checks if the person is married. If the respective person is found as married and the content within the brackets evaluates as TRUE, then the targeting rule is TRUE for the overall expression.</p>
-<img src="{{ root_path }}/img/create-targeting-6.png"></img>
-<p>Templates for some common targeting rules and more complicated examples that explain the logic behind targeting rules can be found in <a href="{{ root_path }}/doc/targeting-products/logic-examples/">Targeting Rule Logic Examples & Templates</a>.</p>
+<img src="{% root_path %}/img/create-targeting-6.png"></img>
+<p>Templates for some common targeting rules and more complicated examples that explain the logic behind targeting rules can be found in <a href="{% root_path %}/doc/targeting-products/logic-examples/">Targeting Rule Logic Examples & Templates</a>.</p>
 
