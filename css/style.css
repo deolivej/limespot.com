@@ -110,6 +110,12 @@ li.ls-nav-button a:hover {
   color: white;
 }
 
+li.ls-fb-link {
+  margin-top: 0px;
+  padding-left:1px;
+  padding-right:1px;
+}
+
 /*
  * buttons
  */
