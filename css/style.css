@@ -38,8 +38,8 @@ a.navbar-brand {
   border-bottom: 15px solid rgba(50,205,50,0.8);
   border-radius: 0;
   position: fixed;
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 1%;
+  padding-right: 1%;
   z-index: 1001;
   width: 100%;
   min-height: 85px;
@@ -111,9 +111,9 @@ li.ls-nav-button a:hover {
 }
 
 li.ls-fb-link {
-  margin-top: 0px;
-  padding-left:1px;
-  padding-right:1px;
+  margin-top: 6px;
+  padding-left:10px;
+  padding-right:10px;
 }
 
 /*
