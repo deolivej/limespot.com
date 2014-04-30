@@ -15,14 +15,14 @@
           <li class="{% if page.name == 'home' %}active{%endif%}">
             <a href="{% root_path %}">Home</a>
           </li>
-          <li class="dropdown {% if page.name =='about' or page.name == 'contact' or page.name == 'faq' %}active{%endif%}">
+          <li class="dropdown {% if page.name =='about' or page.name == 'contact' %}active{%endif%}">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="{% root_path %}about">Background</a></li>
-			  <li><a href="{% root_path %}faq">FAQs</a></li>
               <li><a href="{% root_path %}contact">Contact</a></li>
             </ul>
           </li>
+		  <li class="{% if page.name == 'doc' or page.name == 'faq' %}active{%endif%}"><a href="https://www.limespot.desk.com">Support</a></li>
           <li class="{% if page.name == 'careers' or page.name == 'web-dev' %}active{%endif%}"><a href="{% root_path %}careers">Careers</a></li>
 		  <li class="{% if page.name == 'lsblog' %}active{%endif%}"><a href="{% root_path %}lsblog">Blog</a></li>
           <li class="ls-nav-button">
