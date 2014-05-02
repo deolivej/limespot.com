@@ -1,0 +1,43 @@
+﻿<head>
+	<title>LimeSpot Administration</title>
+	<meta charset="utf-8" />
+	<script src="//limespot.com/js/jquery-1.11.0.min.js"></script>
+	<script src="//limespot.com/js/context.js.aspx?public"></script>
+	<script src="//limespot.com/js/bootstrap-3.1.1.min.js"></script>
+	<link href="//limespot.com/css/bootstrap-3.1.1.min.css" rel="stylesheet" />
+	<link href="//limespot.com/css/style.css" rel="stylesheet" media="all" />
+	<script src="//limespot.com/js/helper-1.00.js"></script>
+	<script src="/js/helper-1.00.js"></script>
+	<script>
+		$(document).ready(function () {
+			LimeSpot.renderKbToc();
+		});
+	</script>
+</head>
+<body>
+	<div class="ls-header fixed">
+	</div>
+	<div class="main">
+		<div class="ls-kb-section clearfix">
+			<div class="ls-kb-content">
+				<h2>Prioritizing & Filtering Objects</h2>
+				<p>All Objects including External Content, Custom Content and Products can be associated with Targeting Rules in two ways: Filter and Prioritize. </p>
+				<p>Whenever you create a new object or edit an existing object you can find a section labeled Targeting Rules at the bottom of the page. This section is populated with all the Targeting Rules that you have previously created. You will notice that each targeting rule has three adjacent click buttons: Filter, Prioritize, and None. These options are demonstrated in the screenshot below. </p>
+				<img class="img-responsive" src="/images/prioritize-filter-1.png" />
+				<p>Refer to Targeting Rules to learn how to create targeting rules and what they do.</p>
+				<h3>Filter an Object</h3>
+				<p>You should filter an object for a targeting rule when you want to display the object if and only if the related targeting rule &#39;s condition is met. </p>
+				<p>For example, if one of your products is gourmet dog food and you have a targeting rule to identify dog lovers you should set the targeting rule to &#39;Filter&#39;, since those are the only people who might be interested in purchasing gourmet dog food. Doing so will make the product visible to people if and only if they have indicated fondness for dogs on their social profiles. </p>
+				<p>Conversely, you might not want to filter a pet blanket for dog lovers as different types of pet owners might be interested in the product.</p>
+				<h3>Prioritize an Object</h3>
+				<p>You should select the Prioritize button for more generic objects that can be related to two or more targeting rules. You can prioritize a product for two or more targeting rules that represent different categories of people.</p>
+				<p>For example, if you are selling a pet accessory that is used by both cats and dogs you should prioritize the product for Cat Lovers and Dog Lovers. This will make sure that people who like cats or dogs see this pet accessory. </p>
+				<p>If you feel that a certain product has no relevance with any Targeting Rule then you should choose None option. Objects with no Targeting Rules are shown to all shoppers. However, such objects are displayed with the least priority. </p>
+				<p>Priority of an Object decides the rank or order in which Objects are displayed on product catalogues. Objects with higher rank are displayed first and vice versa. </p>
+				<p>Our engine ranks Filtered Products ahead of Prioritized Products, followed by untargeted products.</p>
+			</div>
+			<div class="ls-kb-toc"></div>
+		</div>
+	</div>
+	<div class="ls-footer"></div>
+</body>

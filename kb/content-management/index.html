@@ -1,0 +1,41 @@
+﻿<head>
+	<title>LimeSpot Knowledge Base</title>
+	<meta charset="utf-8" />
+	<script src="//limespot.com/js/jquery-1.11.0.min.js"></script>
+	<script src="//limespot.com/js/context.js.aspx?public"></script>
+	<script src="//limespot.com/js/bootstrap-3.1.1.min.js"></script>
+	<link href="//limespot.com/css/bootstrap-3.1.1.min.css" rel="stylesheet" />
+	<link href="//limespot.com/css/style.css" rel="stylesheet" media="all" />
+	<script src="//limespot.com/js/helper-1.00.js"></script>
+	<script src="/js/helper-1.00.js"></script>
+	<script>
+		$(document).ready(function () {
+			LimeSpot.renderKbToc();
+		});
+	</script>
+</head>
+<body>
+	<div class="ls-header fixed">
+	</div>
+	<div class="main">
+		<div class="ls-kb-section clearfix">
+			<div class="ls-kb-content">
+				<h2>What are Contents?</h2>
+				<p>Objects are the basic building blocks of your LimeSpot powered online storefront. Some of the examples can be Products, Images, URLs, and Video links. Objects can also be identified as individual entities that are created and targeted (see <a href="/targeting-products/">Targeting Rules</a>) to showcase user-specific contents.</p>
+				<p>For instance, if you are creating a store for Sporting Goods then your objects can be relevant products like Tennis Racquets, Shoes, Jerseys, or display images; marketing videos, banners etc. To summarize, any element that is visible on your online Shop is a type of Object.  </p>
+				<p>Different types of objects and their properties are described below:</p>
+				<ol>
+					<li><b>Custom Contents:</b> Used to create custom design elements for your online shop. You can embed rich media content using HTML tags that support audio, video, flash and several other types of file formats. Refer to <a href="/object-management/html-objects/">Custom Contents</a> for details.</li>
+					<li><b>External Contents:</b> You can use External Contents to create hyperlinks to external web addresses present outside the scope of your LimeSpot shop. Hyperlinks assist in redirecting customer traffic to other websites, Social media channels or any other URLs of your choice.  Refer to <a href="/object-management/external-objects/">External Contents</a> for details.</li>
+					<li><b>Products: Individual</b> items that you wish to sell at your LimeSpot powered online store. Products are often physical goods, but can also be digital downloads (eBooks, software, etc.) or services. Please refer to <a href="/object-management/products/">Products</a> for details.</li>
+				</ol>
+				<p>Objects are associated with Targeting Rules and Targeting Keywords to generate personalized and customized product catalogs for each of your shoppers.</p>
+				<p>For example, you can add a Targeting rule that determines a shopper’s gender in order to display different product options, graphics or external links for male and female customers.</p>
+				<p>Objects sharing similar properties can be added into Collections. You are free to create collections of you choice and group multiple objects into one collection. The advantage of creating Collections is that you can add a collection directly to Product Catalogs to display all related Objects. See <a href="">Add Collection to Product Catalog</a> for details.</p>
+				<p>While our system allows you to add different types of Objects into one Collection, it is strongly advised that a Collection should always contain objects of same type. This means that one Collection should not contain a mix of Products, External Contents or Custom Contents. You should create one collection for Products, another for Custom Contents and so on.</p>
+			</div>
+			<div class="ls-kb-toc"></div>
+		</div>
+	</div>
+	<div class="ls-footer"></div>
+</body>

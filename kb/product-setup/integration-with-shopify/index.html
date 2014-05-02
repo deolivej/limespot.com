@@ -1,0 +1,52 @@
+﻿<head>
+	<title>LimeSpot Knowledge Base</title>
+	<meta charset="utf-8" />
+	<script src="//limespot.com/js/jquery-1.11.0.min.js"></script>
+	<script src="//limespot.com/js/context.js.aspx?public"></script>
+	<script src="//limespot.com/js/bootstrap-3.1.1.min.js"></script>
+	<link href="//limespot.com/css/bootstrap-3.1.1.min.css" rel="stylesheet" />
+	<link href="//limespot.com/css/style.css" rel="stylesheet" media="all" />
+	<script src="//limespot.com/js/helper-1.00.js"></script>
+	<script src="/js/helper-1.00.js"></script>
+	<script>
+		$(document).ready(function () {
+			LimeSpot.renderKbToc();
+		});
+	</script>
+</head>
+<body>
+	<div class="ls-header fixed">
+	</div>
+	<div class="main">
+		<div class="ls-kb-section clearfix">
+			<div class="ls-kb-content">
+				<h2>Integration with Shopify</h2>
+				<p>
+					Importing products and collections from your Shopify store onto LimeSpot is a simple two-step process.
+					Make sure that you have access to user credentials for Shopify store before you begin the integration process.
+				</p>
+				<p>Below is an easy guide to synchronize LimeSpot with your Shopify store.</p>
+				<h3>Set Up a Connection</h3>
+				<ol>
+					<li>From the LimeSpot Admin Panel select Store Settings and then E-Commerce Connect.</li>
+					<li>Enter your Shopify Store's name in the space provided and click Authorize.</li>
+					<img class="img-responsive" src="/images/shopify-1.png" />
+					<li>You will be redirected to the Shopify website. Enter your Shopify credentials to continue.</li>
+					<li>You will be prompted to install the LimeSpot app for your Shopify store. Click on Install App to complete the process.</li>
+					<img class="img-responsive" src="/images/shopify-2.png" />
+				</ol>
+				<p>You will be redirected to the LimeSpot website and a message indicating successful authentication will be displayed. </p>
+				<h3>Import your Products</h3>
+				<ol>
+					<li>Click on Product Data Import from the Admin Panel.</li>
+					<li>Select the button next to your Shopify store's name.</li>
+					<li>Click on Import Products in the top right corner of the screen.</li>
+				</ol>
+				<p>All your products and collections are now imported to LimeSpot platform and you can view these products under the Product section.</p>
+				<p>Please note that you should click on Import Products to synchronize updates every time you add more products or change product details on your Shopify store.</p>
+			</div>
+			<div class="ls-kb-toc"></div>
+		</div>
+	</div>
+	<div class="ls-footer"></div>
+</body>

@@ -1,0 +1,80 @@
+﻿<head>
+	<title>LimeSpot Knowledge Base</title>
+	<meta charset="utf-8" />
+	<script src="//limespot.com/js/jquery-1.11.0.min.js"></script>
+	<script src="//limespot.com/js/context.js.aspx?public"></script>
+	<script src="//limespot.com/js/bootstrap-3.1.1.min.js"></script>
+	<link href="//limespot.com/css/bootstrap-3.1.1.min.css" rel="stylesheet" />
+	<link href="//limespot.com/css/style.css" rel="stylesheet" media="all" />
+	<script src="//limespot.com/js/helper-1.00.js"></script>
+	<script src="/js/helper-1.00.js"></script>
+	<script>
+		$(document).ready(function () {
+			LimeSpot.renderKbToc();
+		});
+	</script>
+</head>
+<body>
+	<div class="ls-header fixed">
+	</div>
+	<div class="main">
+		<div class="ls-kb-section clearfix">
+			<div class="ls-kb-content">
+				<h2>Integration with Magento</h2>
+				<p>Importing products and collections from your Magneto store onto LimeSpot is fairly easy and straight forward. The first step is to enable API access for your existing Magneto account and then linking this account with your LimeSpot Admin Panel. </p>
+				<p>Magento has three types of subscription: Magento GO, Magento CE and Magento EE. While our system works with all subscription types, our services are optimized for Magento GO stores.</p>
+				<p>Below is a guide to the integration process.</p>
+				<h3>Enabling API Access</h3>
+				<p>Web Services give you the ability to integrate with third-party applications by granting them permission to access specific store resources and data.</p>
+				<h4>Step 1: Create a Web Service Role</h4>
+				<ol>
+					<li>From Magento's Admin menu, select System > Web Services > Roles.</li>
+					<img class="img-responsive" src="/images/magento-1.png" />
+					<li>Click the Add New Role button.</li>
+					<li>In the Role Information section, enter a Role Name such as "API."</li>
+					<img class="img-responsive" src="/images/magento-2.png" />
+					<li>In the panel on the left, select Role Resources and set Resource Access to "All".</li>
+					<li>When complete, click the Save Role button.</li>
+				</ol>
+				<h4>Step 2: Create a Web Service User</h4>
+				<ol>
+					<li>From the Mangento admin menu, select Web Services > Users.</li>
+					<li>Click the Add New User button.</li>
+					<li>Complete the following fields:</li>
+					<ul>
+						<li>User Name: a username of your choice. eg, limespotAPI.</li>
+						<li>First Name: a name of your choice. eg, limespot.</li>
+						<li>Last Name: a name of your choice. eg, API.</li>
+						<li>Email: a valid email address that you own and manage.
+						<li>
+					</ul>
+					<li>In the API Key field, enter a verification key or password. This is the credential that LimeSpot services use to access your Magento Go store.</li>
+					<li>To confirm, re-enter the key in the API Key Confirmation field.</li>
+					<li>In the panel on the left, select User Role. Then, select a Role for the user. (One that you created previously)</li>
+					<li>When complete, click the Save User button.</li>
+				</ol>
+				<h3>Linking Magento Go Store with LimeSpot</h3>
+				<ol>
+					<li>Select E-Commerce Connect from the LimeSpot Admin Panel.</li>
+					<li>Locate the Mangento section on this page.</li>
+					<img class="img-responsive" src="/images/magento-3.png" />
+					<li>Enter the username you created in Magento. eg, limespotAPI.</li>
+					<li>Enter the API Key and your store URL.</li>
+					<li>If required, change the Product Auto-generated setting. By default this is set to Name. This means that when you create multiple variants of a product, Magento differentiates between variants by their product name. You also have an option of changing the Product Auto-generated setting to SKU, wherein multiple product variants have same name but are differentiated by unique SKUs. </li>
+					<li>Click on Validate and Connect to establish a connection.</li>
+					<li>You will receive a confirmation message indicating a successful connection.</li>
+				</ol>
+				<p>Please note that you should select the same Product Auto-generated setting as you did for your Magento Store. If you have not changed this attribute in your Magento store then by default it is always set to Name. </p>
+				<h3>Importing Products into LimeSpot</h3>
+				<ol>
+					<li>Click on Product Data Import from the LimeSpot Admin Panel.</li>
+					<li>Select the button next to your Magento Store's Name.</li>
+					<li>Click on Import Products in the top right corner of the screen.</li>
+				</ol>
+				<p>Please note that you should click on Import Products to synchronize updates every time you add more products or change product details on your Magento store.</p>
+			</div>
+			<div class="ls-kb-toc"></div>
+		</div>
+	</div>
+	<div class="ls-footer"></div>
+</body>

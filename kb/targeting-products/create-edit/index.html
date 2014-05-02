@@ -1,0 +1,86 @@
+﻿<head>
+	<title>LimeSpot Knowledge Base</title>
+	<meta charset="utf-8" />
+	<script src="//limespot.com/js/jquery-1.11.0.min.js"></script>
+	<script src="//limespot.com/js/context.js.aspx?public"></script>
+	<script src="//limespot.com/js/bootstrap-3.1.1.min.js"></script>
+	<link href="//limespot.com/css/bootstrap-3.1.1.min.css" rel="stylesheet" />
+	<link href="//limespot.com/css/style.css" rel="stylesheet" media="all" />
+	<script src="//limespot.com/js/helper-1.00.js"></script>
+	<script src="/js/helper-1.00.js"></script>
+	<script>
+		$(document).ready(function () {
+			LimeSpot.renderKbToc();
+		});
+	</script>
+</head>
+<body>
+	<div class="ls-header fixed">
+	</div>
+	<div class="main">
+		<div class="ls-kb-section clearfix">
+			<div class="ls-kb-content">
+				<h2>Create or Edit Targeting Rules</h2>
+				<h3>Creating a Targeting Rule</h3>
+				<ol>
+					<li>Log in to the LimeSpot Administration Panel and click on the &#39;Targeting Rules&#39; tab on the left hand side of the page.  </li>
+					<li>Click on the Add button present on the top-left corner of the screen. </li>
+					<li>Fill in the targeting rule&#39;s properties (see <a href="#attributes">Defining a Targeting Rule&#39;s Attributes and Targeting Logic</a>).</li>
+					<li>Click Save.</li>
+				</ol>
+				<h3>Copying a Targeting Rule</h3>
+				<p>If you want to create a targeting rule that is similar to one of your existing targeting rules, you can create a copy of an existing targeting rule and modify it accordingly.</p>
+				<ol>
+					<li>From the Targeting Rules tab in the LimeSpot administration panel, find the targeting rule you wish to create a copy of and click the Copy button on the same line as that targeting rule.</li>
+					<li>If you wish to modify the copy of the targeting rule, fill in the targeting rule&#39;s properties (see <a href="#attributes">Defining a Targeting Rule&#39;s Attributes and Targeting Logic</a>).</li>
+					<li>Click Save.</li>
+				</ol>
+				<p>(See example below: the location of the Copy button for the &#39;Teenager&#39; Targeting Rule) </p>
+				<img class="img-responsive" src="/images/create-targeting-1.png" />
+				<h3>Editing a Targeting Rule</h3>
+				<ol>
+					<li>From the Targeting Rules tab in the LimeSpot administration panel, find the targeting rule you wish to alter and click the Edit button on the same line as that targeting rule.</li>
+					<li>Fill in the targeting rule&#39;s properties (see <a href="#attributes">Defining a Targeting Rule&#39;s Attributes and Targeting Logic</a>).</li>
+					<li>Click Save.</li>
+				</ol>
+				<p>(See example below: location of the Edit button for the &#39;Adult&#39; Targeting Rule)</p>
+				<img class="img-responsive" src="/images/create-targeting-2.png" />
+				<h3><a id="attributes"></a>Defining a Targeting Rule&#39;s Attributes</h3>
+				<p>Before specifying the logic statements of a targeting rule you have to define its basic properties. Each property and its function are listed below. </p>
+				<ul>
+					<li>Title: the name of a targeting rule. It is used to identify a targeting rule.</li>
+					<li>Description: a description of the targeting rule. For internal use only.</li>
+					<li>Active/Inactive Toggle: a checkbox that toggles whether or not a targeting rule can be used by objects.</li>
+				</ul>
+				<h3>Targeting Logic</h3>
+				<p>Targeting Rules can be defined to look for certain combinations of qualities in a shopper using Boolean logic. That is, a targeting rule can be set to contain logical statements about a shopper that are found to be either true or false for that individual. If all the criteria are met, the targeting rule as a whole is true for the individual shopper in question.</p>
+				<p>The following types of information can be examined by targeting rules based on the shopper&#39;s profile. Information can only be processed if a person has added it on their profile; a person&#39;s hometown, for example, cannot be determined unless they have added that information to their online profile.</p>
+				<ul>
+					<li>Age. Targeting rules can check if a person is of a certain age; older than or equal to a certain age; or younger than or equal to a certain age.</li>
+					<li>Gender. Targeting rules can check if a person is male or female.</li>
+					<li>Relationship status. Targeting rules can check if a person is single, in a relationship, in a complicated relationship, in an open relationship, engaged, married, widowed, separated, divorced, in a civil partnership, or in a domestic union. </li>
+					<li>Current location. Targeting rules can check if a person&#39;s current location matches or does not match a specified location.</li>
+					<li>Hometown. Targeting rules can determine if a person&#39;s hometown matches or does not match a specific location.</li>
+					<li>Liked pages containing a certain keyword. Targeting rules can check if a given set of keywords appear in any of the pages a person has liked. Each keyword functions like an &#39;OR&#39; operator; the criterion will be deemed to be true if one or more listed keyword can be found in a person&#39;s liked pages.</li>
+					<li>Liked pages being of a certain category. Targeting rules can check if a person has liked or not liked pages under specific categories. Categories include Baby/Kids Goods, Bags/Luggage, Clothing, Computer, Health/Beauty, Jewellery/Watches, Movies/Music, Office Supplies, Outdoor Gear/Sporting Goods, and Pet Supplies. </li>
+				</ul>
+				<p>Criteria can be inserted into targeting rules by selecting them on the scrollable list under Targeting Criteria and then clicking the Add Criteria button. A given criterion can be removed by clicking the Delete button in its row. Once a criterion has been inserted its properties can be defined. For example, some criterion can be set to include or exclude certain qualities; and those qualities can also be defined. In some cases qualities are selected from a dropdown list (such as gender), while in other cases qualities are typed in manually (such as keywords to check for Liked pages). See the example below for a Targeting Rule set up for Hockey Fans. </p>
+				<img class="img-responsive" src="/images/create-targeting-3.png" />
+				<p>If more than one criterion is used in a targeting rule, compound Boolean logic can be used. Dropdown boxes on either side of the criterion&#39;s description provide an option of inserting Bracket &#39;()&#39; operators. A dropdown box on the right side of each criterion gives the option to insert &#39;AND&#39; or &#39;OR&#39; operators. A basic knowledge of Boolean Logic is required to set up efficient and effective Targeting Rules. As such, a simple description of how Boolean Logic works is provided in this document below, and some examples for implementation of targeting rules can be found in Targeting Rule Logic Examples & Templates.</p>
+				<h4>AND Operators</h4>
+				<p>In mathematics, AND is a Logical Conjugation of two or more criteria. The output is TRUE only and only if all of the enclosed statements are true. If a single one of the enclosed statements is false entire the output is FALSE. As such, if you want to check that a person has all of the required qualities you should use &#39;AND&#39; operators to do so. This is done by putting an &#39;AND&#39; operator between two or more statements you want to compare; i.e., the &#39;AND&#39; operator at end of a row will compare the statement in the row it is in with the statement in the next row. For instance, one could use the following set of criterion to check if a person is from New York, likes baseball, and is male. The targeting rule will be counted as TRUE only if all of these requirements are met.</p>
+				<img class="img-responsive" src="/images/create-targeting-4.png" />
+				<h4>OR Operators</h4>
+				<p>While using OR operator, the output is TRUE if any one or more of the enclosed statements are TRUE. If you want to check that a person has at least one of several qualities you should use OR operators to do so. This is done by putting an OR operator between two statements you want to compare; i.e., the OR operator at end of a row will compare the statement in the row it&#39;s in with the statement in the next row. For instance, one could use the following set of criterion to check if a person likes dogs or cats. The targeting rule will be counted as TRUE if at least one of these requirements is met.</p>
+				<img class="img-responsive" src="/images/create-targeting-5.png" />
+				<h4>Bracket Operators</h4>
+				<p>These operators are used in conjugation with &#39;AND&#39; &&#39;OR&#39; operators to perform complicated comparisons of targeting criteria. All the statements placed within Brackets are evaluated before the statements placed outside of Brackets. For example, the following targeting rule would first check if a person likes tennis or if their age is more than thirty-five. If at least one of these conditions is TRUE, then the content within brackets is treated as TRUE. After evaluation of criteria within Brackets, targeting rule checks if the person is married. If the respective person is found as married and the content within the brackets evaluates as TRUE, then the targeting rule is TRUE for the overall expression.</p>
+				<img class="img-responsive" src="/images/create-targeting-6.png" />
+				<p>Templates for some common targeting rules and more complicated examples that explain the logic behind targeting rules can be found in <a href="/targeting-products/logic-examples/">Targeting Rule Logic Examples & Templates</a>.</p>
+			</div>
+			<div class="ls-kb-toc"></div>
+		</div>
+	</div>
+	<div class="ls-footer"></div>
+</body>
+

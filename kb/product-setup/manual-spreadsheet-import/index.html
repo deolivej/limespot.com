@@ -1,0 +1,84 @@
+﻿<head>
+	<title>LimeSpot Knowledge Base</title>
+	<meta charset="utf-8" />
+	<script src="//limespot.com/js/jquery-1.11.0.min.js"></script>
+	<script src="//limespot.com/js/context.js.aspx?public"></script>
+	<script src="//limespot.com/js/bootstrap-3.1.1.min.js"></script>
+	<link href="//limespot.com/css/bootstrap-3.1.1.min.css" rel="stylesheet" />
+	<link href="//limespot.com/css/style.css" rel="stylesheet" media="all" />
+	<script src="//limespot.com/js/helper-1.00.js"></script>
+	<script src="/js/helper-1.00.js"></script>
+	<script>
+		$(document).ready(function () {
+			LimeSpot.renderKbToc();
+		});
+	</script>
+</head>
+<body>
+	<div class="ls-header fixed">
+	</div>
+	<div class="main">
+		<div class="ls-kb-section clearfix">
+			<div class="ls-kb-content">
+				<h2>Manually Importing Products Using a Spreadsheet</h2>
+				<p>You can upload multiple products at once by importing a spreadsheet created in LimeSpot specified format. To download the template click <a href="www.limespot.com">here</a></p>
+				<p>This Spreadsheet template contains three worksheets that have different functionalities as described below:</p>
+				<h3>Worksheet 1: Read-Me</h3>
+				<p>All the relevant terms and column headings used throughout the Spreadsheet template are briefly explained in the Read Me section. For first time users, it is strongly advised to go through the contents of Read Me page before entering product information in other worksheets.</p>
+				<h3>Worksheet 2: Products</h3>
+				<p>You should use Products Worksheet to enter all the product related details that describe and target your products.  Following are the column headings of this worksheet.</p>
+				<ul>
+					<li><b>ID:</b> Every product in LimeSpot database is identified by a unique ID. You are free to choose any unique number but it is advised to follow a sequence while entering multiple products.</li>
+					<li><b>Product Type:</b> You choose your industry from the Account section of Admin Panel and every Industry has multiple Product Types that further categorize similar products. You should associate every product with a relevant Product type that helps your shoppers in product-search. For a list of Industries and Product Types click here.</li>
+					<li><b>Collection:</b> You can create collections to group products with similar characteristics like Design, Style or Price. Collections help you in clustering similar products and displaying them at one location on Product catalogs.  Any single product can be attached with multiple collections. For more details on Collections click here.</li>
+					<li>
+						<b>Targeting Rules:</b> LimeSpot give you the power to target products to specific set of users, which helps shoppers quickly find products that match their interests and likes. Targeting Rules are logical statements that relate products with user’s social profiles. For more information click here. You can create two types of Targeting Rules:
+						<ol>
+							<li><b>Demographics:</b> Most of the products sold online can be associated with people from specific demographics. For example, suits are for men and skirts are for women. Ideally such products should be targeted for their respective audience. You can also create advanced set of demographics like a Denim Skirt targeted to females between 14-30 years of age or a New York Yankees branded T-Shirt targeted to people living in New York and between ages of 14 to 40.</li>
+							<li><b>Keywords:</b> Your shoppers have certain interests which are indicated on their social profiles in terms of their favorite sports, celebrities, books, movies, etc. You can target your products for some Keywords and our engine relates these keywords with user profiles to show your shoppers the most relevant products. For example, keywords for a pair of tennis shoes could be Tennis, Nadal, Wimbledon, etc. When using Keywords your product is shown with priority to people who have shown interests for the targeted keywords.</li>
+						</ol>
+						<p>You can either Filter or Prioritize products for Targeting Rules. Filtering a product ensures that the product is only displayed to users that satisfy the Targeting Logic while prioritizing a product increases the likelihood of person to see a product when its targeting logic is satisfied.</p>
+					</li>
+					<li><b>Images:</b> You should store all your product images in one folder and only enter the file Name for respective images in the Images column. For the system to work accurately, please make sure that no two images have the same file name. </li>
+				</ul>
+				<h3>Worksheet 3: Product Varians</h3>
+				<p>Products usually come with different variants like Size, Color, Design and many other attributes as per the nature of the industry. You can use Product Variants worksheet to record different variations of products. Following are the major sections of Product Variants worksheet.</p>
+				<ul>
+					<li><b>Product ID::</b>the unique identification number that you previously created in Product Worksheet. All different product variations share the same product ID that was originally created for that particular Product.</li>
+					<li><b>Title:</b> the title of your product variant, related to size, color etc. </li>
+					<li><b>Barcode:</b> if applicable, the barcode number can be used for inventory tracking and billing.</li>
+					<li><b>SKU:</b> used for internal inventory tracking and stock management.</li>
+					<li><b>Price:</b> the price (excluding taxes) that you want to set for that product variant.</li>
+					<li><b>Original Price:</b> if a product has been discounted, you can show its original price here so customers will see how much they are saving. </li>
+					<li><b>Attributes:</b> you can have up to five different product attributes that are differentiating factors between different product variants. For example, an apparel company might have product attributes such as size, color, or material; whereas a computer company might have product attributes such as hard disk space, RAM or processors. </li>
+					<li><b>Stock Override:</b> this checkbox enables your store to continue selling a product variant even after its Stock Quantity has reached zero.</li>
+					<li><b>Stock Quantity:</b> this field indicates the available stock quantity of a particular product variant.</li>
+					<li><b>Attributes 1-5:</b>You can choose up to five custom attributes that characterize multiple product variants. For more information on Product Attributes <a href="www.limespot.com">click here</a>.</li>
+				</ul>
+				<h2>Steps to Manually Import Products using the Spreadsheet</h2>
+				<ol>
+					<li>Select Product Data Import from the Admin Panel.</li>
+					<li>Make sure that the radio button close to Excel File is enabled.</li>
+					<li>Upload the Spreadsheet after completing Worksheet2 and Worksheet3.</li>
+					<li>Upload the compressed (.zip) file containing all product images.</li>
+					<li>Click on the Import Products button wait for completion of the process.</li>
+					<img class="img-responsive" src="/images/manual-importation-1.png" />
+				</ol>
+				<p>To compress (or zip> files on Windows OS:</p>
+				<ol>
+					<li>Locate and select all the files you want to compress.</li>
+					<li>Right click on the files, hover over "Send to", and click "Compressed (zipped) folder".</li>
+					<li>A new compressed file will be created in the same folder as your original files.</li>
+				</ol>
+				<p>To compress (or zip> files on Mac OS:</p>
+				<ol>
+					<li>Locate and select all the files you want to compress.</li>
+					<li>Right click on the files and select "Compress".</li>
+					<li>A new compressed file will be created in the same folder as your original files.</li>
+				</ol>
+			</div>
+			<div class="ls-kb-toc"></div>
+		</div>
+	</div>
+	<div class="ls-footer"></div>
+</body>

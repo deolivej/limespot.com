@@ -1,0 +1,40 @@
+﻿<head>
+	<title>LimeSpot Knowledge Base</title>
+	<meta charset="utf-8" />
+	<script src="//limespot.com/js/jquery-1.11.0.min.js"></script>
+	<script src="//limespot.com/js/context.js.aspx?public"></script>
+	<script src="//limespot.com/js/bootstrap-3.1.1.min.js"></script>
+	<link href="//limespot.com/css/bootstrap-3.1.1.min.css" rel="stylesheet" />
+	<link href="//limespot.com/css/style.css" rel="stylesheet" media="all" />
+	<script src="//limespot.com/js/helper-1.00.js"></script>
+	<script src="/js/helper-1.00.js"></script>
+	<script>
+		$(document).ready(function () {
+			LimeSpot.renderKbToc();
+		});
+	</script>
+</head>
+<body>
+	<div class="ls-header fixed">
+	</div>
+	<div class="main">
+		<div class="ls-kb-section clearfix">
+			<div class="ls-kb-content">
+				<h2>Targeting Rule Logic Examples & Templates</h2>
+				<p>Templates for common targeting rules can be found below. These templates also demonstrate the logic behind the design and output of targeting rules.</p>
+				<ol>
+					<li>The following targeting rule checks if a shopper is female and between the ages of 18 and 25.</li>
+					<img class="img-responsive" src="/images/targeting-examples-1.png" />
+					<li>The following targeting rule checks if a shopper is male, a teenager, and likes rap music.</li>
+					<img class="img-responsive" src="/images/targeting-examples-2.png" />
+					<li>The following targeting rule checks if the shopper is likely to have young children by examining if they are older than 35, younger than 50, and married.</li>
+					<img class="img-responsive" src="/images/targeting-examples-3.png" />
+					<li>The following targeting rule checks if the shopper is likely to be interested in sporting merchandise from the New York Yankees. First, the rule examines if a person&#39;s current location or hometown is New York. If at least one of these two conditions is true, then first set of brackets is deemed true. Next, the targeting rule checks if a person likes Baseball or if they like a page associated with Sporting Goods. If at least one of these conditions is true, then second set of brackets is deemed true. If both sets of brackets are true, then the targeting rule is true overall for the person in question. We can reasonably assume that a person who lives in N.Y and likes baseball or sports in general is likely to be interested in merchandise from New York Yankees.</li>
+					<img class="img-responsive" src="/images/targeting-examples-4.png" />
+				</ol>
+			</div>
+			<div class="ls-kb-toc"></div>
+		</div>
+	</div>
+	<div class="ls-footer"></div>
+</body>

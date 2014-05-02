@@ -1,0 +1,74 @@
+﻿<head>
+	<title>LimeSpot Knowledge Base</title>
+	<meta charset="utf-8" />
+	<script src="//limespot.com/js/jquery-1.11.0.min.js"></script>
+	<script src="//limespot.com/js/context.js.aspx?public"></script>
+	<script src="//limespot.com/js/bootstrap-3.1.1.min.js"></script>
+	<link href="//limespot.com/css/bootstrap-3.1.1.min.css" rel="stylesheet" />
+	<link href="//limespot.com/css/style.css" rel="stylesheet" media="all" />
+	<script src="//limespot.com/js/helper-1.00.js"></script>
+	<script src="/js/helper-1.00.js"></script>
+	<script>
+		$(document).ready(function () {
+			LimeSpot.renderKbToc();
+		});
+	</script>
+</head>
+<body>
+	<div class="ls-header fixed">
+	</div>
+	<div class="main">
+		<div class="ls-kb-section clearfix">
+			<div class="ls-kb-content">
+				<h2>Manual Creation of Products</h2>
+				<p>Small and medium-sized businesses with a limited number of products can use this feature to manually create products one at a time from the Admin Panel.</p>
+				<p>If you have an existing ecommerce store click <a href="/product-setup/listed-providers">here</a> to learn how to import all your products at once.</p>
+				<p>The Products section of the Admin Panel is where you can manipulate and view your products. Products will be listed here no matter how they were uploaded to LimeSpot.  </p>
+				<img class="img-responsive" src="/images/products-manual-1.png" />
+				<p>Click on the Add Product button present in the top right corner of the screen to create new products.</p>
+				<img class="img-responsive" src="/images/products-manual-2.png" />
+				<p>From this page you can:</p>
+				<ul>
+					<li>Create a Title and Description for a new Product.</li>
+					<li>Assign your product to a relevant Product Type.</li>
+					<li>Upload multiple product-related images.</li>
+					<li>Add product variants with different attributes like price, size, color, or design.</li>
+					<li>Associate products with Collections.</li>
+					<li>Tag products with multiple Targeting Keywords.</li>
+					<li>Filter or Prioritize Targeting Rules for the product.</li>
+				</ul>
+				<h3>How to Manually Create New Products</h3>
+				<ol>
+					<li>Select the Products tab from the Admin Panel.</li>
+					<li>Click on the Add Product button in the top right corner of the screen.</li>
+					<li>Enter a Title for your product.</li>
+					<li>Select a Product Type from the Drop down list.</li>
+					<li>Enter a Product Description that will describe the product to shoppers.</li>
+					<li>Upload images of your product for customers to view. You can upload a maximum of 5 images from either your local machine or a website URL that contains an image file. </li>
+					<li>Add Product Variants representing different versions of the product (more details <a href="#variants">below</a>).</li>
+					<li>Put the product into appropriate Collections.</li>
+					<li>Add relevant Targeting Keywords to the product.</li>
+					<li>Prioritize of Filter appropriate Targeting Rules* that you wish to associate with the Product. These will define which customers your products appear to.</li>
+					<li>Click Save to complete the Process.</li>
+				</ol>
+				<p>* Our system provides a pre-generated list of Targeting Rules that cover most widely used conditions. However, you are free to create your own Targeting Rules from the Admin Panel.</p>
+				<p>Every new product should be associated with a relevant Product Type. This is useful feature when your customers want to see a list of all available products in a specific category of your store. Refer to <a href="">Add Product Type to Product Catalog</a> for details.</p>
+				<h4><a id="variants"></a>Product Variants</h4>
+				<p>Product Variants are used to record different versions (such as different styles, colors, sizes, etc.) of a single product. For example, variants on a jacket could include small, medium, and large versions.  LimeSpot gives you the freedom to choose multiple Product Attributes for different product variants.</p>
+				<p>Every Product Variant is associated with several Product Attributes, which are defining characteristics of the variant. Product attributes that should be entered for every new product variant are as follows.</p>
+				<ol>
+					<li><b>Title:</b> the title of your product variant, related to size, color etc. </li>
+					<li><b>Barcode:</b> if applicable, the barcode number can be used for inventory tracking and billing.</li>
+					<li><b>SKU:</b>used for internal inventory tracking and stock management.</li>
+					<li><b>Price:</b> the price (excluding taxes) that you want to set for that product variant.</li>
+					<li><b>Original Price:</b> if a product has been discounted, you can show its original price here so customers will see how much they are saving. </li>
+					<li><b>Stock Override:</b> this checkbox enables your store to continue selling a product variant even after its Stock Quantity has reached zero.</li>
+					<li><b>Stock Quantity:</b> this field indicates the available stock quantity of a particular product variant.</li>
+				</ol>
+				<p>In addition to the fields mentioned above, you can choose up to a maximum of 5 custom product attributes that suit your industry needs.  Refer to <a href="/store-setup/">Store Setup</a> for details.</p>
+			</div>
+			<div class="ls-kb-toc"></div>
+		</div>
+	</div>
+	<div class="ls-footer"></div>
+</body>

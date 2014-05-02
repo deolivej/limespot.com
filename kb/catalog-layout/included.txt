@@ -1,0 +1,9 @@
+    <li>
+	<h4><a href="{% root_path %}doc/catalog-layout">Catalog Layout</a></h4>
+      <ul>
+        <li><a href="{% root_path %}doc/catalog-layout">Catalog Overview</a></li>
+        <li><a href="{% root_path %}doc/catalog-layout/create-catalog">Creating a Catalog</a></li>
+        <li><a href="{% root_path %}doc/catalog-layout/customize-edit">Customize and Edit a Catalog</a></li>
+		<li><a href="{% root_path %}doc/catalog-layout/boxes">Boxes</a></li>
+		<li><a href="{% root_path %}doc/catalog-layout/graphics-standards">Graphics Standards</a></li>
+      </ul>
