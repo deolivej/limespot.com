@@ -25,7 +25,7 @@
 				<h3>Creating a Targeting Rule</h3>
 				<ol>
 					<li>From the Admin Panel, go to Store Settings and then Targeting Rules. You will see a list of all previously-created targeting rules.  </li>
-					<img class="img-responsive" src="/images/create-targeting-1.png" />
+					<img class="img-responsive" src="/images/create-targeting-1.jpg" />
 					<li>Click on the Add Targeting Rule button present in the top-right corner of the screen. </li>
 					<li>Fill in the targeting rule&#39;s properties (see <a href="#attributes">Defining a Targeting Rule&#39;s Attributes and Targeting Logic</a>).</li>
 					<li>Click Save.</li>
@@ -40,15 +40,15 @@
 					<li>Click Save.</li>
 				</ol>
 				<p>(See example below: the location of the Copy button for the &#39;Summer Style&#39; Targeting Rule) </p>
-				<img class="img-responsive" src="/images/create-targeting-2.png" />
+				<img class="img-responsive" src="/images/create-targeting-2.jpg" />
 				<h3><a id="attributes"></a>Defining a Targeting Rule&#39;s Attributes</h3>
 				<p>Before specifying the logic statements of a targeting rule you have to define its basic properties. Each property and its function are listed below. </p>
 				<ul>
 					<li>Title: the name of a targeting rule. It is used to identify a targeting rule.</li>
 					<li>Description: a description of the targeting rule. For internal use only.</li>
-					<li>Active/Inactive Toggle: a checkbox that toggles whether or not a targeting rule can be used by objects.</li>
+					<li>Active/Inactive Toggle: a checkbox that toggles whether or not a targeting rule can be used by contents.</li>
 				</ul>
-				<img class="img-responsive" src="/images/create-targeting-3.png" />
+				<img class="img-responsive" src="/images/create-targeting-3.jpg" />
 				<h3>Targeting Criteria</h3>
 				<p>Targeting Rules can be defined to look for certain combinations of qualities in a shopper using Boolean logic. That is, a targeting rule can be set to contain logical statements about a shopper that are found to be either true or false for that individual. If all the criteria are met, the targeting rule as a whole is true for the individual shopper in question.</p>
 				<p>The following types of information can be examined by targeting rules based on the shopper&#39;s profile. Information can only be processed if a person has added it on their profile; a person&#39;s hometown, for example, cannot be determined unless they have added that information to their online profile.</p>
@@ -62,21 +62,21 @@
 					<li>Liked pages being of a certain category. Targeting rules can check if a person has liked or not liked pages under specific categories. Categories include Baby/Kids Goods, Bags/Luggage, Clothing, Computer, Health/Beauty, Jewellery/Watches, Movies/Music, Office Supplies, Outdoor Gear/Sporting Goods, and Pet Supplies. </li>
 				</ul>
 				<p>Criteria can be inserted into targeting rules by selecting them on the scrollable list under Targeting Criteria and then clicking the Add Criteria button. A given criterion can be removed by clicking the Delete button in its row. Once a criterion has been inserted its properties can be defined. For example, some criterion can be set to include or exclude certain qualities; and those qualities can also be defined. In some cases qualities are selected from a dropdown list (such as gender), while in other cases qualities are typed in manually (such as keywords to check for Liked pages). See the example below for a Targeting Rule set up for male shoppers interested in outdoorsmanship. </p>
-				<img class="img-responsive" src="/images/create-targeting-4.png" />
+				<img class="img-responsive" src="/images/create-targeting-4.jpg" />
 				<p>If more than one criterion is used in a targeting rule, compound Boolean logic can be used. Dropdown boxes on either side of the criterion&#39;s description provide an option of inserting Bracket &#39;()&#39; operators. A dropdown box on the right side of each criterion gives the option to insert &#39;AND&#39; or &#39;OR&#39; operators. A basic knowledge of Boolean Logic is required to set up efficient and effective Targeting Rules. As such, a simple description of how Boolean Logic works is provided in this document below, and some examples for implementation of targeting rules can be found in Targeting Rule Logic Examples & Templates.</p>
 				<h4>AND Operators</h4>
 				<p>In mathematics, AND is a Logical Conjugation of two or more criteria. The output is TRUE only and only if all of the enclosed statements are true. If a single one of the enclosed statements is false entire the output is FALSE. As such, if you want to check that a person has all of the required qualities you should use &#39;AND&#39; operators to do so. This is done by putting an &#39;AND&#39; operator between two or more statements you want to compare; i.e., the &#39;AND&#39; operator at end of a row will compare the statement in the row it is in with the statement in the next row. For instance, one could use the following set of criterion to check if a person is from New York, likes Music/Movies, and is female. The targeting rule will be counted as TRUE only if all of these requirements are met.</p>
-				<img class="img-responsive" src="/images/create-targeting-5.png" />
+				<img class="img-responsive" src="/images/create-targeting-5.jpg" />
 				<h4>OR Operators</h4>
 				<p>While using OR operator, the output is TRUE if any one or more of the enclosed statements are TRUE. If you want to check that a person has at least one of several qualities you should use OR operators to do so. This is done by putting an OR operator between two statements you want to compare; i.e., the OR operator at end of a row will compare the statement in the row it&#39;s in with the statement in the next row. For instance, one could use the following set of criterion to check if a person&#39;s location is in England or Scotland. The targeting rule will be counted as TRUE if at least one of these requirements is met.</p>
-				<img class="img-responsive" src="/images/create-targeting-6.png" />
+				<img class="img-responsive" src="/images/create-targeting-6.jpg" />
 				<h4>Arrow Operators</h4>
 				<p>These operators are used in conjugation with &#39;AND&#39; &&#39;OR&#39; operators to perform complicated comparisons of targeting criteria. Left and Right arrow operators move statements onto different levels. Statements present at same level are all evaluated at the same time and can be considered inside one bracket (for people familiar with Boolean logic). Statements placed within Brackets are evaluated before the statements placed outside of Brackets. For example, the following targeting rule would first check if a person likes Health/Beauty or Jewellery/Watches related products. If at least one of these conditions is TRUE, then the content placed on inner level is treated as TRUE. After evaluation of inner criteria, targeting rule checks if the person&#39;s gender is female and they are married. If the respective person is found as female who is married and the content within the brackets evaluates as TRUE, then the targeting rule is TRUE for the overall expression.</p>
-				<img class="img-responsive" src="/images/create-targeting-7.png" />
+				<img class="img-responsive" src="/images/create-targeting-7.jpg" />
 				<p>If the four statements are numbered from one to four, then the overall targeting rule translates to:</p>
 				<p><b>1 AND {2 OR 3} AND 4</b></p>
 				<p>In another example, suppose you want to target male shoppers from the US, UK, and Canada who are married and interested in baby products.</p>
-				<img class="img-responsive" src="/images/create-targeting-8.png" />
+				<img class="img-responsive" src="/images/create-targeting-8.jpg" />
 				<p>If the conditions above are numbered from top to bottom, the overall targeting rule translates to:<p>
 				<p><b>1 AND {2 OR 3 OR 4} AND 5 AND 6</b></p>
 				<p>Templates for some common targeting rules and more complicated examples that explain the logic behind targeting rules can be found in <a href="/targeting-products/logic-examples/">Targeting Rule Logic Examples & Templates</a>.</p>
